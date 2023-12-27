@@ -22,17 +22,16 @@ title: Aisha Ellahi
 email: aishaellahi85@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, my name is Aisha and I'm an ex-molecular biologist turned software engineer who specializes in 
-  building software and data tools for life sciences companies. 
+  building software and data tools for life sciences companies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: @AishaEllahi
-github_username:  aellahi
+twitter_username: AishaEllahi
+github_username: aellahi
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
