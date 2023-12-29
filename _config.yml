@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Aisha
 middle_name:
 last_name: Ellahi
-email: you@example.com
+email: aishaellahi85@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -44,7 +44,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -103,7 +103,6 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -363,7 +362,7 @@ enable_tooltips:
   # for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social:
-  false # enables displaying social links in the
+  true # enables displaying social links in the
   # navbar on the about page
 enable_project_categories:
   true # enables categorization of projects into
