@@ -22,4 +22,4 @@ Hello and welcome to my personal page! My name is Aisha and I am a biologist & s
 
 I am a biologist at heart and a passionate believer in the power of data and technology. I also love communicating and teaching; check out the blog post I wrote when I was at Zymergen about the modeling we used to measure noise in our high-throughput screening process.
 
-Download my CV below or check out my LinkedIn page to learn more.
+Download my CV or check out my [LinkedIn](https://www.linkedin.com/in/aisha-ellahi-seattle/) page to learn more.
