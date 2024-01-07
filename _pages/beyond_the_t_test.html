@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/ -->
+<html lang="en-US" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./beyond_the_t_test_files/42f54226b3"></script><script src="./beyond_the_t_test_files/nr-1216.min.js"></script><script type="text/javascript" id="www-widgetapi-script" src="./beyond_the_t_test_files/www-widgetapi.js" async=""></script><script src="./beyond_the_t_test_files/iframe_api"></script><script src="./beyond_the_t_test_files/froogaloop2.min.js"></script><script async="" src="./beyond_the_t_test_files/fbevents.js"></script><script type="text/javascript" async="" src="./beyond_the_t_test_files/analytics.js"></script><script type="text/javascript" async="" src="./beyond_the_t_test_files/recaptcha__en.js"></script><script async="" src="./beyond_the_t_test_files/gtm.js"></script><script src="./beyond_the_t_test_files/analytics(1).js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=515;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/wombat.js" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.zymergen.com/blog/fermentation-modeling/","20220517052412","https://web.archive.org/","web","/_static/",
+	      "1652765052");
+</script>
+<link rel="stylesheet" type="text/css" href="./beyond_the_t_test_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./beyond_the_t_test_filess/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"42f54226b3",applicationID:"33511957"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<link rel="pingback" href="https://www.zymergen.com/xmlrpc.php">
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<link rel="preconnect" href="https://web.archive.org/web/20220517052412/https://fonts.gstatic.com/" crossorigin=""><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="alternate" hreflang="en" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/">
+<link rel="alternate" hreflang="x-default" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/">
+<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v18.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link media="all" href="./beyond_the_t_test_files/autoptimize_80d409022e4e63e815d982279605ac2a.css" rel="stylesheet"><title>Beyond the t-test: Using Bayesian modeling to separate signal from noise - Zymergen</title>
+	<meta name="description" content="A data science approach to finding commercially relevant titer improvements in fermentation">
+	<link rel="canonical" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Beyond the t-test: Using Bayesian modeling to separate signal from noise - Zymergen">
+	<meta property="og:description" content="A data science approach to finding commercially relevant titer improvements in fermentation">
+	<meta property="og:url" content="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/">
+	<meta property="og:site_name" content="Zymergen">
+	<meta property="article:publisher" content="http://facebook.com/zymergen">
+	<meta property="article:published_time" content="2021-06-22T16:58:00+00:00">
+	<meta property="article:modified_time" content="2021-08-05T17:51:10+00:00">
+	<meta property="og:image" content="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3.jpg">
+	<meta name="twitter:creator" content="@zymergen">
+	<meta name="twitter:site" content="@zymergen">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Zymergen">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="12 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://web.archive.org/web/20220517052412/https://schema.org","@graph":[{"@type":"Organization","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#organization","name":"Zymergen","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/","sameAs":["https://web.archive.org/web/20220517052412/http://facebook.com/zymergen","https://web.archive.org/web/20220517052412/https://www.linkedin.com/company/zymergen/","https://web.archive.org/web/20220517052412/https://www.youtube.com/channel/UC5y3eBWE9gocUSC1O6L93nw","https://web.archive.org/web/20220517052412/https://twitter.com/zymergen"],"logo":{"@type":"ImageObject","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#logo","inLanguage":"en-US","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/uploads/2019/12/Zymergen_Logo_Black_Horz_Name-e1585513012546.png","contentUrl":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/uploads/2019/12/Zymergen_Logo_Black_Horz_Name-e1585513012546.png","width":900,"height":138,"caption":"Zymergen"},"image":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#logo"}},{"@type":"WebSite","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#website","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/","name":"Zymergen","description":"Zymergen is a science and material innovation company rethinking biology and reimagining the world.","publisher":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#primaryimage","inLanguage":"en-US","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3.jpg","contentUrl":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3.jpg","width":1200,"height":630,"caption":"modeling fermentation"},{"@type":"WebPage","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#webpage","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/","name":"Beyond the t-test: Using Bayesian modeling to separate signal from noise - Zymergen","isPartOf":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#website"},"primaryImageOfPage":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#primaryimage"},"datePublished":"2021-06-22T16:58:00+00:00","dateModified":"2021-08-05T17:51:10+00:00","description":"A data science approach to finding commercially relevant titer improvements in fermentation","breadcrumb":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/"]}]},{"@type":"BreadcrumbList","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/"},{"@type":"ListItem","position":2,"name":"Beyond the t-test: Using Bayesian modeling to separate signal from noise"}]},{"@type":"Article","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#article","isPartOf":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#webpage"},"author":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#/schema/person/a00fd13a389bad68dadbd84399c7716f"},"headline":"Beyond the t-test: Using Bayesian modeling to separate signal from noise","datePublished":"2021-06-22T16:58:00+00:00","dateModified":"2021-08-05T17:51:10+00:00","mainEntityOfPage":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#webpage"},"wordCount":3280,"publisher":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#organization"},"image":{"@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#primaryimage"},"thumbnailUrl":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-feature-720x.jpg","keywords":["technology"],"articleSection":["Blog","General","Research","Science","Technology"],"inLanguage":"en-US"},{"@type":"Person","@id":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/#/schema/person/a00fd13a389bad68dadbd84399c7716f","name":"Zymergen","url":"https://web.archive.org/web/20220517052412/https://www.zymergen.com/author/webenertia_admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20220517052412/https://www.google.com/">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20220517052412/https://2022-zymergen.pantheonsite.io/">
+<link rel="alternate" type="application/rss+xml" title="Zymergen » Feed" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Zymergen » Comments Feed" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/comments/feed/">
+<meta content="Zymergen - a child theme for Divi v.1.0.0" name="generator">
+
+
+
+
+
+<link rel="stylesheet" id="wpml-legacy-post-translations-0-css" href="./beyond_the_t_test_files/style.min.css" type="text/css" media="all">
+
+
+
+<script type="text/javascript" src="./beyond_the_t_test_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+<script type="text/javascript" id="cf7_gated_content-js-extra">
+/* <![CDATA[ */
+var wpcf7gc = {"wpDebug":"","ajaxurl":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-admin\/admin-ajax.php","cookieKey":"cf7_gated_content_"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/cf7_gated_content.js" id="cf7_gated_content-js"></script>
+<script type="text/javascript" id="cookie-law-info-js-extra">
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"1","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"ccpa_gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#0a0a0a","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#ffca18","button_1_button_hover":"#cca213","button_1_link_colour":"#0a0a0a","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#dedfe0","button_4_button_hover":"#b2b2b3","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"1","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffca18","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/cookie-law-info-public.js" id="cookie-law-info-js"></script>
+<script type="text/javascript" id="cookie-law-info-ccpa-js-extra">
+/* <![CDATA[ */
+var ccpa_data = {"opt_out_prompt":"Do you really wish to opt out?","opt_out_confirm":"Confirm","opt_out_cancel":"Cancel"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/cookie-law-info-ccpa.js" id="cookie-law-info-ccpa-js"></script>
+<script type="text/javascript" id="topbar_frontjs-js-extra">
+/* <![CDATA[ */
+var tpbr_settings = {"fixed":"fixed","user_who":"notloggedin","guests_or_users":"all","message":"Zymergen is at Touch Taiwan.","status":"inactive","yn_button":"button","color":"#ffca17","button_text":"\u95b1\u8b80\u66f4\u591a","button_url":"\/zh-hant\/events\/touch-taiwan","button_behavior":"samewindow","is_admin_bar":"no","detect_sticky":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/tpbr_front.min.js" id="topbar_frontjs-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/wonderpluginlightbox.js" id="wonderplugin-lightbox-script-js"></script>
+<script type="text/javascript" id="wpml-browser-redirect-js-extra">
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_us":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/blog\/fermentation-modeling\/","en":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/blog\/fermentation-modeling\/","us":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/blog\/fermentation-modeling\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"www.zymergen.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/app.js" id="wpml-browser-redirect-js"></script>
+<link rel="https://api.w.org/" href="https://www.zymergen.com/wp-json/"><link rel="alternate" type="application/json" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-json/wp/v2/posts/20486"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.zymergen.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.zymergen.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.9.3">
+<link rel="shortlink" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/?p=20486">
+<link rel="alternate" type="application/json+oembed" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zymergen.com%2Fblog%2Ffermentation-modeling%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zymergen.com%2Fblog%2Ffermentation-modeling%2F&amp;format=xml">
+<meta name="generator" content="WPML ver:4.5.2 stt:61,1;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="preload" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/wp-content/plugins/wonderplugin-lightbox/engine/icons/css/mhfontello.css" as="font" crossorigin="anonymous">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://web.archive.org/web/20220517052412/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W6LMHGM');</script>
+
+
+<!-- Additional Site Functionality -->
+<script>
+jQuery(function($){
+//for accordions whee all panels are open
+    $('.accordions-open-all .et_pb_accordion .et_pb_toggle_close').addClass('et_pb_toggle_open').removeClass('et_pb_toggle_close');
+
+    $('.accordions-open-all .et_pb_accordion .et_pb_toggle_title').click(function() {
+      	$this = $(this);
+		$this.closest('.et_pb_toggle').toggleClass('.et_pb_toggle_close');
+// 		setTimeout(function(){
+//          $this.closest('.et_pb_accordion').removeClass('et_pb_accordion_toggling');		  
+//       },700);
+    });
+// for accordions where the first panel is open	
+	$('.accordions-open-first .et_pb_accordion .et_pb_toggle').addClass('et_pb_toggle_open').addClass('et_pb_toggle_close');
+	$('.accordions-open-first .et_pb_accordion .et_pb_toggle').first().removeClass('et_pb_toggle_close');
+
+    $('.accordions-open-first .et_pb_accordion .et_pb_toggle_title').click(function() {
+      	$this = $(this);
+		$this.closest('.et_pb_toggle').toggleClass('.et_pb_toggle_close');
+    });
+	
+	//Adding additional markup to handle Flexbox styling on the Our Work Index pages
+	$('.archive article.et_pb_post').each(function () {
+			$(this).addClass('flex-styling-applied').find('.entry-title, .post-meta, .post-content').wrapAll('<div class="post-details"/>')
+	});
+});
+</script>
+
+
+<link rel="icon" href="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2022/03/Zym_Favicon_256x256-257x250.png" sizes="32x32">
+<link rel="icon" href="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2022/03/Zym_Favicon_256x256.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2022/03/Zym_Favicon_256x256.png">
+<meta name="msapplication-TileImage" content="https://www.zymergen.com/wp-content/uploads/2022/03/Zym_Favicon_256x256.png">
+<style></style><link rel="stylesheet" href="./beyond_the_t_test_files/mhfontello.css" type="text/css"><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script src="./beyond_the_t_test_files/3825960914145592" async=""></script></head>
+<body class="post-template-default single single-post postid-20486 single-format-standard et-tb-has-template et-tb-has-body et-tb-has-footer et_button_icon_visible et_button_custom_icon et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_divi_theme et-db et_pb_recaptcha_enabled chrome"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","https://www.zymergen.com/blog/fermentation-modeling/","20220517052412",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container" class="et-animated-content" style="padding-top: 60px; margin-top: -15px;">
+<div id="et-boc" class="et-boc">
+			
+		
+
+	<header id="main-header" data-height-onload="60" data-height-loaded="true" data-fixed-height-onload="60" class="et-fixed-header" style="top: 0px;">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/">
+				<img src="./beyond_the_t_test_files/Zymergen_Logo_Small_Transparent.png" width="250" height="38" alt="Zymergen" id="logo" data-height-percentage="70" data-actual-width="250" data-actual-height="38">
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="44" data-fixed-height="30" style="padding-left: 200px;">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16670"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/what-we-do/">What We Do</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17880"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/how-we-do-it/">How We Do It</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28367"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#">Solutions</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29415"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/advanced-materials/">Advanced Materials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28368"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/automation/">Automation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28441"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/drug-discovery/">Drug Discovery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16086"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/partners/">Partner with Us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11069"><a>Markets</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29345"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/additive-manufacturing/">Additive Manufacturing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5622"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/agriculture/">Agriculture</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3821"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/electronics/">Electronics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29283"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/healthcare-materials/">Healthcare Materials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29381"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/packaging/">Packaging</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4388"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/emerging-areas/">Emerging Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16109"><a>Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16110"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/">Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16112"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/videos/">Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18730"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16082"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/our-story/">Our Story</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16081"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/life-at-zymergen/">Life at Zymergen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16083"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/careers/">Careers</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16103"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/employee-spotlights/">Employee Spotlights</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18770"><a href="https://web.archive.org/web/20220517052412/https://investors.zymergen.com/">Investor Relations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16108"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/leadership-team/">Leadership Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16087"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/board-of-directors/">Board of Directors</a></li>
+</ul>
+</li>
+<li class="nav-item--contact menu-item menu-item-type-post_type menu-item-object-page menu-item-1258"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/contact/">Contact Us</a></li>
+</ul>					</nav>
+				
+				
+				
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				<ul id="mobile_menu" class="et_mobile_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16670 et_first_mobile_item"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/what-we-do/">What We Do</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17880"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/how-we-do-it/">How We Do It</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28367"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#">Solutions</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29415"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/advanced-materials/">Advanced Materials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28368"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/automation/">Automation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28441"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/drug-discovery/">Drug Discovery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16086"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/partners/">Partner with Us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11069"><a>Markets</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29345"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/additive-manufacturing/">Additive Manufacturing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5622"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/agriculture/">Agriculture</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3821"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/electronics/">Electronics</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29283"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/healthcare-materials/">Healthcare Materials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29381"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/packaging/">Packaging</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4388"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/emerging-areas/">Emerging Areas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16109"><a>Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16110"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/">Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16112"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/videos/">Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18730"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16082"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/our-story/">Our Story</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16081"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/life-at-zymergen/">Life at Zymergen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16083"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/careers/">Careers</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16103"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/employee-spotlights/">Employee Spotlights</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18770"><a href="https://web.archive.org/web/20220517052412/https://investors.zymergen.com/">Investor Relations</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16108"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/leadership-team/">Leadership Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16087"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/board-of-directors/">Board of Directors</a></li>
+</ul>
+</li>
+
+<li class="nav-item--contact menu-item menu-item-type-post_type menu-item-object-page menu-item-1258 nav-item--contact-style"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/contact/">Contact Us</a></li></ul></div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+    <div id="main-content">
+    <div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_body et_pb_with_background et_pb_fullwidth_section et_section_regular">
+				
+				
+				
+				
+				
+				
+				<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0_tb_body et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_fullwidth_header_container left">
+					<div class="header-content-container center">
+					<div class="header-content">
+						
+						
+						<span class="et_pb_fullwidth_header_subhead">Blog</span>
+						<div class="et_pb_header_content_wrapper"></div>
+						
+					</div>
+				</div>
+					
+				</div>
+				<div class="et_pb_fullwidth_header_overlay"></div>
+				<div class="et_pb_fullwidth_header_scroll"></div>
+			</section>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1_tb_body et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body et_pb_gutters1 et_pb_row_3-4_1-4">
+				<div class="et_pb_column et_pb_column_3_4 et_pb_column_0_tb_body post-content  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
+				
+				
+				
+				
+				<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
+				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/" data-icon="4">Back to All Blog Posts</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">Jun 22, 2021</div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1><span style="font-weight: 400;">Beyond the t-test: Using Bayesian modeling to separate signal from noise</span></h1></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><em><span style="font-weight: 400;">A data science approach to finding commercially relevant titer improvements in fermentation.</span></em></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>By Aisha Ellahi, Ph.D.</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="1200" height="630" src="./beyond_the_t_test_files/fermentation-og3.jpg" alt="Emancipation Day March 1905" title="fermentation og3" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3.jpg 1200w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3-980x515.jpg 980w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/fermentation-og3-480x252.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1200px, 100vw" class="wp-image-20494"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span style="font-weight: 400;">The primary aim of strain engineering at Zymergen is to genetically engineer a microbe that can produce high titers of a commercially relevant target molecule. This is done by screening hundreds to thousands of genetic edits in small-scale, high-throughput microtiter plates and selecting a small subset for testing at larger scales in fermentation tanks. </span></p>
+<p><span style="font-weight: 400;">Here, I describe the Bayesian modeling framework used by our Data Science team to remove process-driven noise and estimate true strain performance from high-throughput screening (HTS) data. The removal of such noise is particularly necessary for strain optimization programs in which the host organism is near the theoretical maximum titer/performance, and therefore, genetic contexts in which mutations that individually have small anticipated effect sizes must be combined (or stacked) to achieve percent improvements in titer that are commercially significant.&nbsp;&nbsp;</span></p>
+<h2><span style="font-weight: 400;">Zymergen’s high-throughput screening platform</span></h2>
+<p><span style="font-weight: 400;">Zymergen’s high-throughput screening (HTS) platform enables the building and testing of hundreds to thousands of genetically distinct microbes (or strains) per experiment. Strains are grown in 96- or 384-well microtiter plates with multiple replicates per strain (Figure 1). Phenotypes such as overall growth or biomass, glucose consumption, pH, and titer of a desired target molecule are measured and recorded.&nbsp;</span></p>
+<p><span style="font-weight: 400;"></span></p>
+<p><span style="font-weight: 400;"></span></p>
+<p><span style="font-weight: 400;"></span></p>
+<p><span style="font-weight: 400;"></span></p>
+<p><span style="font-weight: 400;"></span></p>
+<p><span style="font-size: 20.608px;"></span></p>
+<p><span style="font-size: 20.608px;"></span></p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_1">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="960" height="540" src="./beyond_the_t_test_files/Beyond-the-T-test-figures.jpg" alt="" title="Beyond the T-test figures" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures.jpg 960w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 960px, 100vw" class="wp-image-20496"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Figure 1. Overview of Zymergen’s Test process. Gray circles in panels 2 and 3 depict a single parent strain (often called the “reference strain”) that is assayed on every plate. Test strains are depicted in green. Multiple replicates per strain are assayed. Portions of this figure were reproduced and adapted from Figure 2 of the blog post titled “<a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/technology/robots-biology-and-unsupervised-model-selection/">Robots, Biology, and Unsupervised Model Selection.</a>”</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2><span style="font-weight: 400;">Screen many, select few: The quest to identify truly improved strains</span></h2>
+<p><span style="font-weight: 400;">The purpose of HTS is to quickly and cheaply screen thousands of genetic mutations－many of which are anticipated to have zero effect on the desired phenotype－to identify the rare few that do. Identifying truly improved strains, however, can be difficult for at least three reasons.&nbsp;</span></p>
+<p><span style="font-weight: 400;">First, an organism’s biology can be finicky and unpredictable; there is wide variation in how different strains behave in different conditions. Some are remarkably steadfast in their growth and performance, regardless of external conditions and how their genome is perturbed. Others are remarkably sensitive. Conditions a strain might be sensitive to include media formulation, temperature, cell density, and genetic background, meaning the particular genotypic context in which mutations are introduced.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Second, the closer an organism is to its theoretical maximum for producing a target molecule, the smaller the anticipated effect size is of a given genetic edit on titer. This fact, alluded to earlier, means that the vast majority of mutations will have zero effect, while those that do will have only a slight effect. The genetic signal will be small and likely hard to separate from other variables that affect titer.</span></p>
+<p><span style="font-weight: 400;">The third factor that contributes to noise is the HTS process itself. Variations in media batches, incubator temperature, inoculum volume, and even the position of a well within a microtiter plate introduce slight biases in observed measurements. And of course, measurements are inherently noisy: even two wells inoculated from a single colony of genetically identical cells will yield slightly different measurements in the same assay. Further still, even two measurements taken from the same well will almost always be slightly different. With so many variables affecting performance and introducing bias, assessing a test strain’s true performance is non-trivial.&nbsp;&nbsp;</span></p>
+<h2><span style="font-weight: 400;">Inferring strain performance through Bayesian modeling&nbsp;</span></h2>
+<p><span style="font-weight: 400;">Though measurements are noisy, data scientists can attempt to estimate and remove noise by building a model of the data generating process. This can also allow for an estimation of the true effect of a genetic mutation on an observed measurement. Variables like noise, genetic edits, and other factors that affect a measurement are commonly called “parameters.” The Data Science team at Zymergen uses a Bayesian approach to estimate parameter values because among the many available modeling tools, a Bayesian approach has several advantages. The first advantage is that under a Bayesian framework, parameter values are estimated as probability distributions rather than absolute quantities or point estimates. Representing parameters as distributions enables a more intuitive quantification of the uncertainty in said parameter’s value. It can also reveal which parameters might be driving noise or which may require more sampling.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Another advantage is that Bayesian methods provide a ready framework in which to incorporate prior knowledge about a parameter’s value into the model via prior probability distributions, or “priors.” Priors weight possible parameter values based on a scientist’s historical knowledge about the physically plausible range of values for a given parameter. A biologically-relevant example is to place a uniform prior on titer that restricts its value to a number between 0 and 100 g/L. This prior might be informed by expert knowledge of the microbe or by an estimate of the theoretical max for the target molecule’s titer.&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="font-weight: 400;">A third advantage of the Bayesian approach is that it can easily be adapted to model data in which parameters are non-independent, grouped together, or related to each other in some complex way. Such parameters are often called hierarchical parameters, and in the framework of hierarchical modeling, inferences made about one parameter can inform another. The hierarchical framework is particularly relevant for the HTS data because the HTS process is inherently structured: strain replicates are grouped by the genetic mutation they carry, wells within a microtiter plate are of course clustered by said plate, and plates themselves are further grouped by experiments (see Figure 2 for a visual depiction of this hierarchy). Another way in which HTS data is structured is in how parent strains and reference strains (i.e., strains used as biological controls or performance benchmarks) are replicated across plates. Even further still, media batches are used across many plates, and thereby constitute another facet by which plates can be grouped. We expect wells in the same plate, strains descended from a common parent, and strains grown in a particular media batch to behave similarly.&nbsp;&nbsp;</span></p>
+<p><span style="font-weight: 400;">While technically speaking it is possible to model the HTS process without a hierarchical approach (for instance by adding each parameter as a separate regression term), doing so can lead to parameter estimates with wildly varying levels of uncertainty due to differences in sampling</span><span style="font-weight: 400;">. A hierarchical approach, by contrast, allows for the leveraging of estimates made about one parameter to inform the estimate of another parameter that is grouped in a related hierarchy. For example, HTS plates are grouped by experiments, and occasionally an experiment may have many fewer plates than others for a given HTS process. The estimated experiment effects from experiments with more plates (i.e., more samples) can be used to inform the estimate of the experiment with fewer plates. </span></p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_2">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="960" height="540" src="./beyond_the_t_test_files/Beyond-the-T-test-figures-1.jpg" alt="HTS data can be structured as hierarchical probability distributions" title="Beyond HTS data can be structured as hierarchical probability distributions T-test figures (1)" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-1.jpg 960w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-1-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 960px, 100vw" class="wp-image-20499"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Figure<span style="font-weight: 400;"> 2. A visual depiction of how HTS data can be structured as hierarchical probability distributions. Parameters at the upper levels of the hierarchy, such as “parent strain” and “experiment,” inform the lower-level child strain and main plate parameters clustered below them. Image courtesy of Nathan Chan, Data Scientist at Zymergen.</span><span style="font-weight: 400;">&nbsp; </span></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2><span style="font-weight: 400;">An example of a Bayesian approach to modeling</span></h2>
+<p><span style="font-weight: 400;">Suppose you are a scientist charged with engineering a microbe that can produce 5% more than its parent strain of a desired molecule (“Your Favorite Molecule”, or YFM). You take an approach in which you engineer mutations randomly throughout the genome and build, let’s say, 1000 strains. After growing and measuring YFM titer, some strains appear to have higher titer than their parents, but you observe some inconsistencies: percent improvements vary experiment-to-experiment, plate-to-plate, and even among strain replicates within a plate.&nbsp;&nbsp;</span></p>
+<p><span style="font-weight: 400;">How much of the variation in titer is due to genetics and how much is due to process-driven bias? We can build a simple model to approximate the data generating process in which we assume that each strain has some true response that is a function of the genetic edit it carries. This true response is obscured by the bias of the particular plate the strain is grown on (perhaps itself a function of how that plate was processed or handled) and random noise. While we don’t know the exact value of each of these parameters, we can make some simplifying assumptions–for example, that global noise is gaussian, and that the effects of each parameter on the response are additive.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Below is a mathematical definition of the model</span><span style="font-weight: 400;">, where an individual well-level observation <strong><em>yi</em> </strong></span><span style="font-weight: 400;">can be expressed as a function of the strain grown in that well (<strong>βstrain</strong></span><span style="font-weight: 400;">), the microtiter plate that well resides in (<strong>βplate</strong></span><span style="font-weight: 400;">), and a global noise term (<strong>σ</strong></span><span style="font-weight: 400;">):</span></p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_3">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="646" height="156" src="./beyond_the_t_test_files/beyond-t-test-eq1.png" alt="beyond t-test equation" title="beyond t-test equation" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/beyond-t-test-eq1.png 646w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/beyond-t-test-eq1-480x116.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 646px, 100vw" class="wp-image-20502"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Strains can be grouped by the parent strains from which they are derived, and plates can be grouped by the experiments in which they are physically processed:</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_4">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="914" height="272" src="./beyond_the_t_test_files/beyond-t-test-eq2.png" alt="beyond t-test equation" title="beyond t-test equation" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/beyond-t-test-eq2.png 914w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/beyond-t-test-eq2-480x143.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 914px, 100vw" class="wp-image-20506"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>The distributions of <strong>βstrain</strong> and <strong>βplate</strong> are thus themselves functions of the <strong>βparent </strong>and <strong>βexperiment </strong>parameters respectively. Below is a probabilistic graph model (PGM) of the model outlined above:</p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_5">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="960" height="540" src="./beyond_the_t_test_files/Beyond-the-T-test-figures-2.jpg" alt="Beyond the T-test equation" title="Beyond the T-test equation" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-2.jpg 960w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-2-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 960px, 100vw" class="wp-image-20508"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Figure 3. A probabilistic graph model of the model outlined above. </span></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Probabilistic graph models like the one depicted in Figure 3 offer another way another way to visualize the hierarchical relationships between parameters.</span><span style="font-weight: 400;"> After models are fit to the data, correcting measurements for process noise, or “normalizing” the data, is as simple as subtracting </span><span style="font-weight: 400;"> estimates from each measurement. An example of HTS data pre- and post-normalization for a biological control strain is shown in Figure 4. This example data shows how much variation in titer is observed in a single control strain expected to show an even performance across plates.&nbsp; Raw measurements shown in 4A cluster and vary by plate, whereas we expect the strain to show roughly the same titer across plates. Modeling allows us to estimate the effect of each plate and subtract it, resulting in the “normalized” measurements shown in 4B.</span></p></div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_6">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="960" height="294" src="./beyond_the_t_test_files/Beyond-the-T-test-figures-3-1.jpg" alt="Beyond the T-test figures" title="Beyond the T-test figures" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-3-1.jpg 960w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/Beyond-the-T-test-figures-3-1-480x147.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 960px, 100vw" class="wp-image-20512"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Figure 4: Normalization in action. (A) Example of raw titer measurements obtained from a control strain grown in twenty-six different 96-well plates. It’s performance is expected to be roughly the same across all plates, yet as shown in panel (A), titer varies by plate. Such variation exemplifies plate bias observed in a typical HTS experiment. These variations could be driven by differences in temperature, inoculum volume, or media formulation across plates. (B) “Normalized” raw data from panel A, in which the mean plate effect </span><span style="font-weight: 400;"> inferred from model fitting has been subtracted from the raw measurements on the right. Removing the effect of plates allows one to directly compare measurements across plates. </span></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2><span style="font-weight: 400;">Does normalization help?&nbsp;</span></h2>
+<p><span style="font-weight: 400;">The sections above have outlined one method by which one can quantitatively estimate the effect of a genetic mutation on a strain’s phenotype. While this is all well and good in theory, how do we assess that such an approach is in fact leading to better predictions and actually identifying truly improved strains? As Richard McElreath states in the first chapter of </span><i><span style="font-weight: 400;">Statistical Rethinking</span></i><span style="font-weight: 400;">, a widely popular primer on Bayesian statistics: “A concern with ‘truth’ enlivens these models, but just like a golem or a modern robot, scientific models are neither true nor false, neither prophets nor charlatans. Rather they are constructs engineered for some purpose.” </span><span style="font-weight: 400;"> Bayesian models are silicon robots of our own creation, and like robots, they will dutifully crank and churn on any dataset they are fed, producing results and predictions completely agnostic to truth and context. So how do we know they are helping and that their results reflect truth?&nbsp;</span></p>
+<p><span style="font-weight: 400;">One way to answer this question is to use differences between strains that have been observed in fermentation tanks as “ground truth.” Groups of strains that rank in this way are referred to as ladder strains. The task then would be to see if normalized microtiter plate data of ladder strains better mirrors differences observed in tanks compared to raw plate data; if they do, we know the Bayesian approach is working in it’s aim to remove HTS-specific noise. If they do not, then we know that either the model is, at the very least, perhaps misspecified, or alternatively that the plate conditions may not be accurately reflecting fermentation tank conditions. A cleaner approach involves using simulated data in which one “knows” which strains are statistically different in performance and to test if the model can replicate said differences.&nbsp;</span></p>
+<p><span style="font-weight: 400;">At Zymergen, we’ve used both approaches to validate our Bayesian models, and we have found that removing plate bias</span><i><span style="font-weight: 400;"> does</span></i><span style="font-weight: 400;"> increase the confidence with which a scientist can say a given strain is improved over its parent. The exact percent difference may not replicate in a fermentation tank, but the qualitative ranking of top improved strains does. Another bonus is that the models can reveal variables in the test process that are driving noise and can thereby help us improve it. For example, if a particular experiment or media batch is found to have a non-zero effect on measurements, actions can be taken to further investigate the cause of this bias. As we continue to test hundreds of mutations, we will accumulate more data that will enable us to generate better, more informative models.&nbsp;&nbsp;&nbsp;</span></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_7">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="400" height="400" src="./beyond_the_t_test_files/zy-headshot-aisha.jpg" alt="Sheeva Haghighat, Technology Product Manager at Zymergen" title="zy headshot aisha" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/zy-headshot-aisha.jpg 400w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2021/06/zy-headshot-aisha-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" class="wp-image-20514"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3><span style="font-weight: 400;">Conclusions</span></h3>
+<p><span style="font-weight: 400;">Bayesian hierarchical modeling of Zymergen’s HTS process is a powerful way to correct measurements for process-driven noise and bias. The probabilistic nature of Bayesian methods as well as a ready framework in which to incorporate prior knowledge allows for better parameter estimates and a straightforward estimation of parameter uncertainty. And without bias and noise affecting their estimated titers, strains can be directly compared to their parents as well as to each other. This results in a more accurate estimation of the percent of improvement a strain shows relative to its parent or other strains.&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><i><span style="font-weight: 400;">Aisha Ellahi, Ph.D. is a data scientist with a background in molecular biology and yeast genetics. She spent the early part of her career studying the evolution of gene function in yeasts using genomics. Now, she uses her domain knowledge to develop models that quantify process bias and predict strain performance at Zymergen.</span></i></p>
+<p><i><span style="font-weight: 400;">Learn more about our research and development in </span></i><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/technology/robots-biology-and-unsupervised-model-selection/"><i><span style="font-weight: 400;">unsupervised model selection</span></i></a><i><span style="font-weight: 400;">, </span></i><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/the-art-of-biological-data-science-bringing-biologys-great-unknowns-into-focus/"><i><span style="font-weight: 400;">biological data science</span></i></a><i><span style="font-weight: 400;">, and </span></i><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/how-machine-learning-is-changing-the-way-we-design-products/"><i><span style="font-weight: 400;">machine learning</span></i></a><i><span style="font-weight: 400;">. </span></i></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_body  et_pb_css_mix_blend_mode_passthrough" id="sidebar">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Follow Tomorrow</p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_body  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Subscribe to the Zymergen newsletter.</p></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_code et_pb_code_0_tb_body wpcf7_newsletter_signup">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div role="form" class="wpcf7" id="wpcf7-f6471-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#wpcf7-f6471-o1" method="post" class="wpcf7-form init use-floating-validation-tip" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="6471">
+<input type="hidden" name="_wpcf7_version" value="5.5.6">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6471-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+<input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]">
+<input type="hidden" name="_wpcf7cf_hidden_groups" value="[]">
+<input type="hidden" name="_wpcf7cf_visible_groups" value="[]">
+<input type="hidden" name="_wpcf7cf_repeaters" value="[]">
+<input type="hidden" name="_wpcf7cf_steps" value="{}">
+<input type="hidden" name="_wpcf7cf_options" value="{&quot;form_id&quot;:6471,&quot;conditions&quot;:[],&quot;settings&quot;:{&quot;animation&quot;:&quot;yes&quot;,&quot;animation_intime&quot;:200,&quot;animation_outtime&quot;:200,&quot;conditions_ui&quot;:&quot;normal&quot;,&quot;notice_dismissed&quot;:false}}">
+<input type="hidden" name="_wpcf7_recaptcha_response" value="HFYWI3chsRM2VwUlICT0gTTghCJyxhawlvZQdyOD82FylMBxNkIHBeYQY6SjkeamB2MQVQBRE1BRFKTmIodVhIPBJFIUt6Ymc4VUJabWgLSCIGXU4vTmktcSUkVk8ZRwZEaEMmeGsbVXhnQnk3Z34ZdkUFTn0qVws3cR5HZQthVXJwBgcXRWYDVWcdZ18ibEocHAZ8SHlhFzchfARzIBZOFw">
+</div>
+<p><span class="wpcf7-form-control-wrap email_address"><input type="email" name="email_address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span> <input type="submit" value="Sign Me Up" class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span></p>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+			</div><ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_body clearfix  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_body et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="https://web.archive.org/web/20220517052412/https://www.linkedin.com/company/zymergen-inc-/" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_1_tb_body et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="https://web.archive.org/web/20220517052412/https://twitter.com/zymergen" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_2_tb_body et_pb_social_icon et_pb_social_network_link  et-social-youtube"><a href="https://web.archive.org/web/20220517052412/https://www.youtube.com/channel/UC5y3eBWE9gocUSC1O6L93nw" class="icon et_pb_with_border" title="Follow on Youtube" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul><div class="et_pb_module et_pb_sidebar_0_tb_body et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light et_pb_sidebar_no_border">
+				
+				
+				
+				
+				<div id="nav_menu-13" class="et_pb_widget widget_nav_menu"><div class="menu-blog-sidebar-menu-container"><ul id="menu-blog-sidebar-menu" class="menu"><li id="menu-item-9379" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-9379"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-9327" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9327"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/company/">Company</a></li>
+	<li id="menu-item-9331" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-9331"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/technology/">Technology</a></li>
+	<li id="menu-item-11336" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-11336"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/science/">Science</a></li>
+	<li id="menu-item-11933" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11933"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/product/">Product</a></li>
+	<li id="menu-item-20887" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20887"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/green-chemistry/">Green Chemistry</a></li>
+</ul>
+</li>
+</ul></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	    </div>
+    
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div id="footer_follow" class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer newsletter_subscription et_pb_equal_columns et_pb_gutters1 et_pb_row_3-4_1-4">
+				<div class="et_pb_column et_pb_column_3_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Follow Today,<br> Make Tomorrow.</p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><span>Sign up for our newsletter to receive updates about the latest innovations in synthetic biology and news from Zymergen.</span></p></div>
+			</div><div class="et_pb_module et_pb_code et_pb_code_0_tb_footer wpcf7_newsletter_signup">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div role="form" class="wpcf7" id="wpcf7-f6471-o2" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#wpcf7-f6471-o2" method="post" class="wpcf7-form init use-floating-validation-tip" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="6471">
+<input type="hidden" name="_wpcf7_version" value="5.5.6">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6471-o2">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+<input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]">
+<input type="hidden" name="_wpcf7cf_hidden_groups" value="[]">
+<input type="hidden" name="_wpcf7cf_visible_groups" value="[]">
+<input type="hidden" name="_wpcf7cf_repeaters" value="[]">
+<input type="hidden" name="_wpcf7cf_steps" value="{}">
+<input type="hidden" name="_wpcf7cf_options" value="{&quot;form_id&quot;:6471,&quot;conditions&quot;:[],&quot;settings&quot;:{&quot;animation&quot;:&quot;yes&quot;,&quot;animation_intime&quot;:200,&quot;animation_outtime&quot;:200,&quot;conditions_ui&quot;:&quot;normal&quot;,&quot;notice_dismissed&quot;:false}}">
+<input type="hidden" name="_wpcf7_recaptcha_response" value="HFYWI3chsRM2VwUlICT0gTTghCJyxhawlvZQdyOD82FylMBxNkIHBeYQY6SjkeamB2MQVQBRE1BRFKTmIodVhIPBJFIUt6Ymc4VUJabWgLSCIGXU4vTmktcSUkVk8ZRwZEaEMmeGsbVXhnQnk3Z34ZdkUFTn0qVws3cR5HZQthVXJwBgcXRWYDVWcdZ18ibEocHAZ8SHlhFzchfARzIBZOFw">
+</div>
+<p><span class="wpcf7-form-control-wrap email_address"><input type="email" name="email_address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span> <input type="submit" value="Sign Me Up" class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span></p>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="https://web.archive.org/web/20220517052412/https://www.linkedin.com/company/zymergen-inc-/" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="https://web.archive.org/web/20220517052412/https://twitter.com/zymergen" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li><li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-youtube"><a href="https://web.archive.org/web/20220517052412/https://www.youtube.com/channel/UC5y3eBWE9gocUSC1O6L93nw" class="icon et_pb_with_border" title="Follow on Youtube" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div id="footer_primary" class="et_pb_with_border et_pb_section et_pb_section_3_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_footer et_pb_gutters1">
+				<div class="et_pb_column et_pb_column_2_5 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="246" height="264" src="./beyond_the_t_test_files/Zym_FooterIcon_03112022__md.png" alt="" title="Zym_FooterIcon_03112022__md" class="wp-image-28881"></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><strong>Zymergen Headquarters</strong></p>
+<p>5980 Horton Street, Suite 105,<br> Emeryville, CA, 94608, United States</p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper  et_pb_module ">
+				<a id="footer-button" class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_light" href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/contact/" data-icon="5">Contact Us</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_3_5 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_sidebar_0_tb_footer et_pb_widget_area clearfix et_pb_widget_area_left  et_pb_text_align_left et_pb_bg_layout_dark et_pb_sidebar_no_border">
+				
+				
+				
+				
+				<div id="nav_menu-15" class="et_pb_widget widget_nav_menu"><h4 class="widgettitle">Solutions</h4><div class="menu-footer-solutions-nav-container"><ul id="menu-footer-solutions-nav" class="menu"><li id="menu-item-29449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29449"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/advanced-materials/">Advanced Materials</a></li>
+<li id="menu-item-28468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28468"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/automation/">Automation</a></li>
+<li id="menu-item-28469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28469"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/drug-discovery/">Drug Discovery</a></li>
+<li id="menu-item-28470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28470"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/partners/">Partner with Us</a></li>
+</ul></div></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_sidebar_1_tb_footer et_pb_widget_area clearfix et_pb_widget_area_left  et_pb_text_align_left et_pb_bg_layout_dark et_pb_sidebar_no_border">
+				
+				
+				
+				
+				<div id="nav_menu-7" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">Markets</h4><div class="menu-footer-markets-nav-container"><ul id="menu-footer-markets-nav" class="menu"><li id="menu-item-29443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29443"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/additive-manufacturing/">Additive Manufacturing</a></li>
+<li id="menu-item-5869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5869"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/agriculture/">Agriculture</a></li>
+<li id="menu-item-5351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5351"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/electronics/">Electronics</a></li>
+<li id="menu-item-29444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29444"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/healthcare-materials/">Healthcare Materials</a></li>
+<li id="menu-item-29445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29445"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/packaging/">Packaging</a></li>
+<li id="menu-item-5352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5352"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/markets/emerging-areas/">Emerging Areas</a></li>
+</ul></div></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_sidebar_2_tb_footer et_pb_widget_area clearfix et_pb_widget_area_left  et_pb_text_align_left et_pb_bg_layout_dark et_pb_sidebar_no_border">
+				
+				
+				
+				
+				<div id="nav_menu-10" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">About Us</h4><div class="menu-footer-about-nav-container"><ul id="menu-footer-about-nav" class="menu"><li id="menu-item-16121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16121"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/leadership-team/">Leadership Team</a></li>
+<li id="menu-item-16122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16122"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/board-of-directors/">Board of Directors</a></li>
+<li id="menu-item-16140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16140"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/solutions/partners/">Partners</a></li>
+<li id="menu-item-16141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16141"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/about-us/careers/">Careers</a></li>
+<li id="menu-item-18772" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18772"><a href="https://web.archive.org/web/20220517052412/https://investors.zymergen.com/">Investor Relations</a></li>
+</ul></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2_tb_footer footer_row_last">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">© 2022 Zymergen Inc. All rights reserved.</div>
+			</div><div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="335" height="400" src="./beyond_the_t_test_files/PECB-Certified-white.png" alt="" title="PECB-Certified-white" srcset="https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2020/11/PECB-Certified-white.png 335w, https://web.archive.org/web/20220517052412im_/https://www.zymergen.com/wp-content/uploads/2020/11/PECB-Certified-white-251x300.png 251w" sizes="(max-width: 335px) 100vw, 335px" class="wp-image-14483"></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_sidebar_3_tb_footer footer-policy-menu et_pb_widget_area clearfix et_pb_widget_area_right et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div id="nav_menu-11" class="fwidget et_pb_widget widget_nav_menu"><div class="menu-footer-policy-nav-container"><ul id="menu-footer-policy-nav" class="menu"><li id="menu-item-5362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-5362"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-5363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5363"><a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/patents/">Patents and Trademarks</a></li>
+</ul></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" data-cli-style="cli-style-v2" style="background-color: rgb(10, 10, 10); color: rgb(255, 202, 24); font-family: inherit; bottom: 0px; position: fixed; display: none;"><span><div class="cli-bar-container cli-style-v2"><div class="cli-bar-message">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept”, you consent to the use of ALL the cookies.<br><div class="wt-cli-ccpa-element"> <a style="color:#333333" class="wt-cli-ccpa-opt-out">Do not sell my personal information</a>.</div></div><div class="cli-bar-btn_container"><a role="button" class="medium cli-plugin-button cli-plugin-main-button cli_settings_button" style="margin: 0px 10px 0px 5px; color: rgb(51, 51, 51); background-color: rgb(222, 223, 224);">Cookie Settings</a><a role="button" data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display: inline-block; color: rgb(10, 10, 10); background-color: rgb(255, 202, 24);">Got It</a></div></div></span></div><div id="cookie-law-info-again" style="display: none; background-color: rgb(10, 10, 10); color: rgb(255, 202, 24); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px;" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the ...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Always Enabled</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Duration</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table>								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Functional							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox" data-id="checkbox-functional">
+									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Functional</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<div class="wt-cli-cookie-description">
+									Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Performance							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox" data-id="checkbox-performance">
+									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Performance</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<div class="wt-cli-cookie-description">
+									Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analytics							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox" data-id="checkbox-analytics">
+									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Analytics</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<div class="wt-cli-cookie-description">
+									Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+								Advertisement							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox" data-id="checkbox-advertisement">
+									<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Advertisement</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="advertisement">
+								<div class="wt-cli-cookie-description">
+									Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Others							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox" data-id="checkbox-others">
+									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Others</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<div class="wt-cli-cookie-description">
+									Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><div id="wonderpluginlightbox_options" data-skinsfoldername="skins/default/" data-jsfolder="https://www.zymergen.com/wp-content/plugins/wonderplugin-lightbox/engine/" data-autoslide="false" data-showall="false" data-slideinterval="5000" data-showtimer="true" data-timerposition="bottom" data-timerheight="2" data-timercolor="#dc572e" data-timeropacity="1" data-navarrowspos="inside" data-closepos="outside" data-enteranimation="fadeIn" data-exitanimation="fadeOut" data-showplaybutton="false" data-alwaysshownavarrows="false" data-bordersize="1" data-showtitleprefix="false" data-responsive="true" data-fullscreenmode="false" data-fullscreentextoutside="true" data-closeonoverlay="true" data-videohidecontrols="false" data-mutevideo="false" data-nativehtml5controls="false" data-titlestyle="bottom" data-imagepercentage="75" data-enabletouchswipe="true" data-autoplay="true" data-html5player="true" data-overlaybgcolor="#000" data-overlayopacity="0.6" data-defaultvideovolume="1" data-bgcolor="#FFF" data-borderradius="0" data-thumbwidth="96" data-thumbheight="72" data-thumbtopmargin="12" data-thumbbottommargin="12" data-barheight="64" data-showtitle="false" data-titleprefix="%NUM / %TOTAL" data-titlebottomcss="color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;" data-showdescription="true" data-descriptionbottomcss="color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-titleinsidecss="color:#fff; font-size:16px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;" data-descriptioninsidecss="color:#fff; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-titleoutsidecss="color:#fff; font-size:18px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:center; margin: 8px;" data-descriptionoutsidecss="color:#fff; font-size:14px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:center; margin:8px; padding: 0px;" data-videobgcolor="#000" data-html5videoposter="" data-responsivebarheight="false" data-smallscreenheight="415" data-barheightonsmallheight="48" data-notkeepratioonsmallheight="false" data-showsocial="false" data-socialposition="position:absolute;top:100%;right:0;" data-socialpositionsmallscreen="position:absolute;top:100%;right:0;left:0;" data-socialdirection="horizontal" data-socialbuttonsize="32" data-socialbuttonfontsize="18" data-socialrotateeffect="true" data-showfacebook="true" data-showtwitter="true" data-showpinterest="true" data-bordertopmargin="48" data-shownavigation="true" data-navbgcolor="rgba(0,0,0,0.2)" data-shownavcontrol="true" data-hidenavdefault="false" data-hidenavigationonmobile="false" data-hidenavigationonipad="false" data-wonderplugin-lightbox-options="d6f7442140" data-_wp_http_referer="/wp-admin/admin.php?page=wonderplugin_lightbox_show_options" style="display:none;"></div><!-- Google Tag Manager -->
+<noscript><iframe src="https://web.archive.org/web/20220517052412if_/https://www.googletagmanager.com/ns.html?id=GTM-W6LMHGM" height="0" width="0"></iframe></noscript>
+
+<!-- Additional Site Functionality -->
+<script>
+jQuery(function($){
+	$( document ).ready(function() {
+		$('.mobile_menu_bar_toggle').click(function() {
+			$('body').toggleClass('mobile-nav-open');
+		});
+
+		//$('#mobile_menu .nav-item--contact a').text('Contact');
+		$('#mobile_menu .nav-item--contact').appendTo($('#mobile_menu')).addClass('nav-item--contact-style');
+		
+		$('#home-video-thumb a').attr("data-overlayopacity","1");
+	});
+});
+</script>
+
+
+
+<script type="text/javascript" src="./beyond_the_t_test_files/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/index.js" id="contact-form-7-js"></script>
+<script type="text/javascript" id="socialsnap-js-js-extra">
+/* <![CDATA[ */
+var socialsnap_script = {"ajaxurl":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-admin\/admin-ajax.php","on_media_width":"250","on_media_height":"250","nonce":"febbd6f79b","post_id":"20486"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/socialsnap.js" id="socialsnap-js-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/custom.js" id="custom-js-js"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"387c71b6e1","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"346e320175","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"20486","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/scripts.min.js" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/smoothscroll.js" id="smoothscroll-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/jquery.fitvids.js" id="fitvids-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/common.js" id="et-core-common-js"></script>
+<script type="text/javascript" id="wpcf7cf-scripts-js-extra">
+/* <![CDATA[ */
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/web.archive.org\/web\/20220517052412\/https:\/\/www.zymergen.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/scripts.js" id="wpcf7cf-scripts-js"></script>
+<script type="text/javascript" src="./beyond_the_t_test_files/api.js" id="google-recaptcha-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Ldw5uUUAAAAAOGtkdIZn1Wroh1CxCWCvsQL2VYB","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/index(1).js" id="wpcf7-recaptcha-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./beyond_the_t_test_files/sticky-elements.js" id="et-builder-modules-script-sticky-js"></script>
+<script type="text/javascript" id="">var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","3825960914145592");fbq("track","PageView");
+
+}</script>
+<noscript><img height="1" width="1" style="display:none" src="https://web.archive.org/web/20220517052412im_/https://www.facebook.com/tr?id=3825960914145592&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+		<div id="ss-copy-popup" class="ss-popup-overlay">
+			<div class="ss-popup">
+
+				<div class="ss-popup-heading">
+					<span>Copy link</span>
+					<a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#" class="ss-close-modal" rel="nofollow noopener">
+						<svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M17.883 16.667l7.058-7.058c0.517-0.517 0.517-1.367 0-1.883s-1.367-0.517-1.883 0l-7.058 7.058-7.058-7.058c-0.517-0.517-1.367-0.517-1.883 0s-0.517 1.367 0 1.883l7.058 7.058-7.058 7.058c-0.517 0.517-0.517 1.367 0 1.883 0.258 0.258 0.6 0.392 0.942 0.392s0.683-0.133 0.942-0.392l7.058-7.058 7.058 7.058c0.258 0.258 0.6 0.392 0.942 0.392s0.683-0.133 0.942-0.392c0.517-0.517 0.517-1.367 0-1.883l-7.058-7.058z"></path></svg>					</a>
+				</div><!-- END .ss-popup-heading -->
+
+				<div class="ss-popup-content">
+
+					<div class="ss-copy-action">
+						<input type="text" readonly="readonly" value="https://www.zymergen.com/blog/fermentation-modeling/" class="ss-copy-action-field" aria-label="Copy">
+						<a href="https://web.archive.org/web/20220517052412/https://www.zymergen.com/blog/fermentation-modeling/#" class="ss-button" rel="nofollow noopener">Copy<span class="ss-share-network-tooltip">Copied</span></a>
+						<svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M25.313 28v-18.688h-14.625v18.688h14.625zM25.313 6.688c1.438 0 2.688 1.188 2.688 2.625v18.688c0 1.438-1.25 2.688-2.688 2.688h-14.625c-1.438 0-2.688-1.25-2.688-2.688v-18.688c0-1.438 1.25-2.625 2.688-2.625h14.625zM21.313 1.313v2.688h-16v18.688h-2.625v-18.688c0-1.438 1.188-2.688 2.625-2.688h16z"></path></svg>					</div><!-- END .ss-copy-action -->
+
+					<div class="ss-powered-by">Powered by <a href="https://web.archive.org/web/20220517052412/https://socialsnap.com/?utm_source=WordPress&amp;utm_medium=link&amp;utm_campaign=inthewild" target="_blank" rel="nofollow noopener"><svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="30" height="32" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg"><path d="M22.293 0.146l7.602 4.172c0.386 0.201 0.386 0.541 0 0.757l-16.688 9.147c-1.684 0.943-2.241 2.271-1.669 3.461 0 0.093 0 0.201-0.201 0.263-0.207 0.088-0.441 0.088-0.649 0l-10.399-5.702c-0.386-0.201-0.386-0.541 0-0.757l20.628-11.311c0.428-0.225 0.937-0.236 1.375-0.031zM7.892 31.854l-7.602-4.172c-0.386-0.201-0.386-0.541 0-0.757l16.688-9.147c1.684-0.943 2.241-2.271 1.669-3.461 0-0.093 0-0.201 0.201-0.263 0.207-0.088 0.442-0.088 0.649 0l10.399 5.702c0.386 0.201 0.386 0.541 0 0.757l-20.628 11.311c-0.428 0.225-0.937 0.237-1.375 0.031z"></path></svg>Social Snap</a></div><!-- END .ss-powered-by -->
+				</div><!-- END .ss-popup-content -->
+			</div><!-- END .ss-popup -->
+		</div><!-- END #ss-copy-popup -->
+
+			
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"42f54226b3","applicationID":"33511957","transactionName":"NQMBYUEEC0JUVBUIVgxJIlZHDApfGlETDlcWAw1RHgcKVUwaFQRUEgoCQVY=","queueTime":0,"applicationTime":1723,"atts":"GUQCFwkeGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<div><div>Could not connect to the reCAPTCHA service. Please check your internet connection and reload to get a reCAPTCHA challenge.</div></div></body></html>
