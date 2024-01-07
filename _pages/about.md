@@ -20,6 +20,6 @@ social: true # includes social icons at the bottom of the page
 
 Hello and welcome to my personal page! My name is Aisha and I am a biologist & software engineer who specializes in building software and data science products for life sciences companies. I have worked on the data science and engineering teams of over four mid-stage startups in biotech, most recently [Enveda Biosciences](https://www.envedabio.com/).
 
-I am a biologist at heart and a passionate believer in the power of data and technology. I also love communicating and teaching; check out the blog post I wrote when I was at Zymergen about the modeling we used to measure noise in our high-throughput screening process.
+I am a biologist at heart and a passionate believer in the power of data, software, and AI to completely transform the way we engineer biology. I also love teaching others about this exciting topic! Check out the blog post I wrote about the Bayesian models we used at Zymergen to model noise and batch effects in our high-throughput screening process.
 
-Download my CV or check out my [LinkedIn](https://www.linkedin.com/in/aisha-ellahi-seattle/) page to learn more.
+Download my [CV](https://drive.google.com/file/d/1UuGBfiIGyv9fea1OuQlMbRfxOV4z92hM/view?usp=drive_link) or check out my [LinkedIn](https://www.linkedin.com/in/aisha-ellahi-seattle/) page to learn more.
