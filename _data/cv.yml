@@ -1,0 +1,75 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Aisha Ellahi
+    - name: Email
+      value: aishaellahiis@gmail.com
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Senior Software Engineer
+      company: Enveda Biosciences
+      year: Dec 2023 - Present
+      description:
+        - Description 1.
+        - Description 2.
+    - title: Senior Data Scientist
+      company: California Institute of Technology, Pasadena, California, USN
+      year: 1933
+      description:
+        - Description 1.
+        - Description 2.
+
+    - title: Director
+      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+      year: 1917-1933
+
+    - title: Professor of Theoretical Physics
+      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+      year: 1911 - 1917
+      description:
+
+    - title: Associate Professor of Theoretical Physics
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1909 - 1911
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: University of California Berkeley
+      year: 2010 - 2015
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Bachelor of Science
+      institution: University of Texas at Austin
+      year: 2007
+      description:
+        - Description 1.
+        - Description 2.
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
