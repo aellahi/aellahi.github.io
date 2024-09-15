@@ -1,5 +1,5 @@
 ---
-layout: externalpost
+layout: post
 redirect: https://aellahi.github.io/blog/beyond_the_t_test.html
 title: Beyond the t-test
 date: 2022-06-22
