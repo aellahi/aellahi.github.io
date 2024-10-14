@@ -65,7 +65,7 @@ Results in:
 | :---------- | :-------------- | :----------- | :----------- |
 | mouse       | Mus             | musculus     | mammal       |
 | zebrafish   | Danio           | rerio        | fish         |
-| fruit fly   | Drosophila      | melanogaster | ivertebrate  |
+| fruit fly   | Drosophila      | melanogaster | invertebrate |
 | sars_cov2   | betacoronavirus | pandemicum   |              |
 ```
 
