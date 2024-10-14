@@ -92,7 +92,7 @@ class Animals(pa.DataFrameModel):
     )
 ```
 
-By marking `unique=True` for the `common_name` field, you're setting it as a the primary key and also implicitly making sure that there are no duplicate rows in this table. Validation is as easy as feeding your input data to the `.validate` method:
+By marking `unique=True` for the `common_name` field, you're setting it as the primary key and ensuring there are no duplicate rows in this table. Validation is as easy as feeding your input data to the `.validate` method:
 
 ```python
 # validate
