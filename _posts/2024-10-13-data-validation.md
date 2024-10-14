@@ -39,7 +39,7 @@ def create_animal_df():
         dict(
             zip(
                 columns,
-                ["fruit fly", "Drosophila", "melanogaster", "ivertebrate"],
+                ["fruit fly", "Drosophila", "melanogaster", "invertebrate"],
             )
         ),
         dict(
@@ -115,7 +115,7 @@ def create_invalid_animal_df():
         dict(
             zip(
                 columns,
-                ["fruit fly", "Drosophila", "melanogaster", "ivertebrate"],
+                ["fruit fly", "Drosophila", "melanogaster", "invertebrate"],
             )
         ),
         dict(
@@ -148,14 +148,6 @@ yields:
                 "column": "common_name",
                 "check": "field_uniqueness",
                 "error": "series 'common_name' contains duplicate values:0    mouse4    mouseName: common_name, dtype: object"
-            }
-        ],
-        "DATAFRAME_CHECK": [
-            {
-                "schema": "Animals",
-                "column": "animal_group",
-                "check": "isin(['mammal', 'fish', 'invertebrate', 'bird', 'reptile', 'amphibian'])",
-                "error": "Column 'animal_group' failed element-wise validator number 0: isin(['mammal', 'fish', 'invertebrate', 'bird', 'reptile', 'amphibian']) failure cases: ivertebrate"
             }
         ]
     }
@@ -231,7 +223,6 @@ Notice too that the `weight_g` were passed in as strings, but the `coerce=True` 
 Another fun feature of dataframe models is being able to define custom [data processing methods](https://pandera.readthedocs.io/en/stable/parsers.html) using the `@pa.dataframe_parser` decorator (column-level parsing methods can also be defined). The example below shows how z-score calculation can be done for all the measurements grouped by `common_name`.
 
 ```python
-
 from typing import Dict
 from pandera.typing import Series
 
