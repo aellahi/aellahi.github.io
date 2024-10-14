@@ -1,21 +1,149 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://aellahi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aellahi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-14T00:48:10+00:00</updated><id>https://aellahi.github.io/feed.xml</id><title type="html">blank</title><subtitle>Aisha Ellahi&apos;s personal website. I am a biologist turned software engineer who works in the biotech industry.
-</subtitle><entry><title type="html">Data Validation Simplified with Pandera</title><link href="https://aellahi.github.io/blog/2024/data-validation/" rel="alternate" type="text/html" title="Data Validation Simplified with Pandera" /><published>2024-10-13T00:00:00+00:00</published><updated>2024-10-13T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/data-validation</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/data-validation/"><![CDATA[<p>As a software engineer working at a life sciences company, building robust data pipelines is a huge part of my job. While data hygiene itself is not the most exciting task, it is essential to all data-driven learning and decision-making. Statistical tests, machine learning models, and even gut-level inferences are only as good as the data that goes into them. As the old adage goes: garbage in, garbage out!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="I3_01Ux9ieGE9q829BdL5vlOyfTKX6UTrpLftZYEM7E">
+<!-- Avoid warning on Google Chrome
+        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+        see https://stackoverflow.com/a/75119417
+    -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Validation Simplified with Pandera | Aisha  Ellahi</title>
+    <meta name="author" content="Aisha  Ellahi">
+    <meta name="description" content="Example code highlighting the use of pandera's models for data validation">
+    <meta name="keywords" content="Aisha Ellahi, software, biology, biotech, data science">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://aellahi.github.io/blog/2024/data-validation/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Aisha </span>Ellahi</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
+
+              <!-- Other pages -->
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Data Validation Simplified with Pandera</h1>
+    <p class="post-meta">October 13, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+        ·  
+        <a href="/blog/tag/software">
+          <i class="fas fa-hashtag fa-sm"></i> software</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>As a software engineer working at a life sciences company, building robust data pipelines is a huge part of my job. While data hygiene itself is not the most exciting task, it is essential to all data-driven learning and decision-making. Statistical tests, machine learning models, and even gut-level inferences are only as good as the data that goes into them. As the old adage goes: garbage in, garbage out!</p>
 
 <p>Data validation is any task that aims to ensure data conforms to the necessary assumptions required for any scientific analysis. It can mean everything from making sure metadata is formatted correctly, to checking that measurements are within three standard deviations of the mean.</p>
 
 <p>Catching data problems early saves time and money. Training costly models on bad data can lead to drawing erroneous conclusions as well as be a waste of compute resources. And building re-usable data validation methods is especially important, as models trained and tested on a small local dataset might work great but might flop when deployed to a production environment.</p>
 
-<p><br /><br /></p>
+<p><br><br></p>
 
-<h2 id="pandera-makes-data-validation-easy"><code class="language-plaintext highlighter-rouge">pandera</code> makes data validation easy</h2>
+<h2 id="pandera-makes-data-validation-easy">
+<code class="language-plaintext highlighter-rouge">pandera</code> makes data validation easy</h2>
 
 <p>As a data scientist, I often did one-off custom data validation in jupyter notebooks. While better than nothing, the problem with jupyter notebooks is that they’re messy and don’t lend themselves to re-usable code. A few years ago, however, I discovered <code class="language-plaintext highlighter-rouge">pandera</code>, and have been hooked ever since.</p>
 
-<p><code class="language-plaintext highlighter-rouge">pandera</code> is a python package that essentially applies the concept of a <a href="https://docs.pydantic.dev/latest/">pydantic</a> <code class="language-plaintext highlighter-rouge">BaseModel</code> to a <code class="language-plaintext highlighter-rouge">pandas</code> dataframe. You can outline the desired validation framework for any dataframe you have in one convenient python class called the <a href="https://pandera.readthedocs.io/en/stable/dataframe_models.html">dataframe model</a> and use it to check your data.</p>
+<p><code class="language-plaintext highlighter-rouge">pandera</code> is a python package that essentially applies the concept of a <a href="https://docs.pydantic.dev/latest/" rel="external nofollow noopener" target="_blank">pydantic</a> <code class="language-plaintext highlighter-rouge">BaseModel</code> to a <code class="language-plaintext highlighter-rouge">pandas</code> dataframe. You can outline the desired validation framework for any dataframe you have in one convenient python class called the <a href="https://pandera.readthedocs.io/en/stable/dataframe_models.html" rel="external nofollow noopener" target="_blank">dataframe model</a> and use it to check your data.</p>
 
 <p>Below are a few examples of how this simple but powerful class works.</p>
 
-<p><br /><br /></p>
+<p><br><br></p>
 
 <h2 id="example-1-basic-typing-checking"><strong>Example 1: Basic typing checking</strong></h2>
 
@@ -145,7 +273,7 @@
 
 <p>Having been in many situations where you know there’s a problem but don’t know <em>where</em> in the dataframe the offending value is, this report is amazing! It tells you exactly what check has failed and which column has the offending value. If you set <code class="language-plaintext highlighter-rouge">lazy=False</code> and check for a <code class="language-plaintext highlighter-rouge">SchemaError</code> instead, it will even tell you which index/row of the dataframe is breaking the check.</p>
 
-<p><br /><br /></p>
+<p><br><br></p>
 
 <h2 id="example-2-inheritance-and-dataframe-level-checks"><strong>Example 2: Inheritance and Dataframe-level checks</strong></h2>
 
@@ -153,7 +281,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">pandera</code> accommodates these use cases via dataframe-wide validation methods that are marked with the <code class="language-plaintext highlighter-rouge">@pa.dataframe_check</code> decorator. This syntax dramatically improves readability and condenses many lines of checking code into one python object.</p>
 
-<p>To extend the previous example, let’s say that you perform field research by measuring the weight in grams of real life “samples” of each animal (let’s ignore the virus example for now, though I was intrigued to learn that there have been efforts <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7685332/">to quantify the weight of total SARS-CoV-2 viruses</a> in people with COVID-19). You do this by taking three measurements for each animal. After weeks of data collection, you want to check that your measurements are in triplicate.</p>
+<p>To extend the previous example, let’s say that you perform field research by measuring the weight in grams of real life “samples” of each animal (let’s ignore the virus example for now, though I was intrigued to learn that there have been efforts <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7685332/" rel="external nofollow noopener" target="_blank">to quantify the weight of total SARS-CoV-2 viruses</a> in people with COVID-19). You do this by taking three measurements for each animal. After weeks of data collection, you want to check that your measurements are in triplicate.</p>
 
 <p>Not only can you leverage your previously-outlined <code class="language-plaintext highlighter-rouge">Animals</code> datamodel for this new dataframe via inheritance, but you can add a new dataframe-wide level check to make sure there are exactly three measurements for each animal:</p>
 
@@ -204,11 +332,11 @@
 
 <p>Notice too that the <code class="language-plaintext highlighter-rouge">weight_g</code> were passed in as strings, but the <code class="language-plaintext highlighter-rouge">coerce=True</code> argument converted the values to floats.</p>
 
-<p><br /><br /></p>
+<p><br><br></p>
 
 <h2 id="example-3-data-pre-processing-with-custom-parsers"><strong>Example 3: Data pre-processing with custom parsers</strong></h2>
 
-<p>Another fun feature of dataframe models is being able to define custom <a href="https://pandera.readthedocs.io/en/stable/parsers.html">data processing methods</a> using the <code class="language-plaintext highlighter-rouge">@pa.dataframe_parser</code> decorator (column-level parsing methods can also be defined). The example below shows how z-score calculation can be done for all the measurements grouped by <code class="language-plaintext highlighter-rouge">common_name</code>.</p>
+<p>Another fun feature of dataframe models is being able to define custom <a href="https://pandera.readthedocs.io/en/stable/parsers.html" rel="external nofollow noopener" target="_blank">data processing methods</a> using the <code class="language-plaintext highlighter-rouge">@pa.dataframe_parser</code> decorator (column-level parsing methods can also be defined). The example below shows how z-score calculation can be done for all the measurements grouped by <code class="language-plaintext highlighter-rouge">common_name</code>.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
 <span class="kn">from</span> <span class="n">pandera.typing</span> <span class="kn">import</span> <span class="n">Series</span>
@@ -254,83 +382,167 @@
 | mouse         | Mus     | musculus  | mammal         | C           |      110.7 |  1.14384  |
 </code></pre></div></div>
 
-<p><br /><br /></p>
+<p><br><br></p>
 
-<p>These three examples cover the vast majority of data validation use cases that I’ve encountered, but in case you’re curious to learn more, definitely check out the <code class="language-plaintext highlighter-rouge">pandera</code> <a href="https://pandera.readthedocs.io/en/stable/index.html#">docs</a>. The package offers support for other tabular data formats as well (such as <code class="language-plaintext highlighter-rouge">pyspark</code> and <code class="language-plaintext highlighter-rouge">dask</code> dataframes), though <code class="language-plaintext highlighter-rouge">pandas</code> has the most support by far.</p>]]></content><author><name></name></author><category term="software" /><summary type="html"><![CDATA[Example code highlighting the use of pandera's models for data validation]]></summary></entry><entry><title type="html">Eight Features of Software Development at a Biotech Start-up</title><link href="https://aellahi.github.io/blog/2024/software-in-biotech/" rel="alternate" type="text/html" title="Eight Features of Software Development at a Biotech Start-up" /><published>2024-09-18T00:00:00+00:00</published><updated>2024-09-18T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/software-in-biotech</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/software-in-biotech/"><![CDATA[<p>When I finished graduate school in 2016 as a molecular biologist, I knew I wanted to work at the intersection of biology, data science, and software. The field of genomics was exploding then, which brought with it the capability to capture thousands to millions of measurements per cell. All that data promised a more complete picture of biology, but it also necessitated new methods to generate, transform, and interpret said data. You can’t exactly read genome sequences in Excel (though folks have tried), and the sheer quantity of measurements renders experiments practically uninterpretable without statistics and modeling.</p>
+<p>These three examples cover the vast majority of data validation use cases that I’ve encountered, but in case you’re curious to learn more, definitely check out the <code class="language-plaintext highlighter-rouge">pandera</code> <a href="https://pandera.readthedocs.io/en/stable/index.html#" rel="external nofollow noopener" target="_blank">docs</a>. The package offers support for other tabular data formats as well (such as <code class="language-plaintext highlighter-rouge">pyspark</code> and <code class="language-plaintext highlighter-rouge">dask</code> dataframes), though <code class="language-plaintext highlighter-rouge">pandas</code> has the most support by far.</p>
 
-<p>Eight years later, we are at the beginning of another exciting era—one fueled by machine learning and large language models. This renewed spotlight on tech and bio will likely attract software developers from outside the field of biology who may be curious about what working at an early to mid-stage biotech company is like. It is with this audience in mind that I decided to write this post.</p>
+  </article>
 
-<p>Let’s start with a basic question:</p>
 
-<h3>What is the goal of software at a biotech start-up?</h3>
-
-<p>This question might sound too elementary—kind of like asking what water is to a fish. But let’s attempt an answer, because I believe it will highlight both the requirements as well as the challenges of building software products for science.</p>
-
-<p>The goal of all software is to automate tedious, repetitive tasks and to perform them at scale and without error. That’s it. One can certainly add some color to this definition: the goal of software is to <em>cleanly and elegantly</em> automate tasks, or to <em>function seamlessly</em> whether there are 10 or 10,000 people using it. But these qualifiers are just decorators of the essential truth that we use software to do things faster and with fewer mistakes than we ourselves can.</p>
-
-<p>Early-stage biotech companies, like all biotech companies, are in the business of creating and selling a biologically-derived product, whether that’s a therapeutic drug, sustainably sourced squalane (a component of skin moisturizers), or a genetically engineered crop that is robust to climate change. Biotechs differ from most other companies in that their products require a long development time (many years, if not decades). These companies are often founded on the hint of a promising research finding, but the real work is turning that discovery into a product you can manufacture at scale and that will work as desired in a human body or other intended environment.</p>
-
-<p>This period of transforming a promising scientific nugget to a commercial product is essentially a long phase of research and development. Early-stage biotechs are still conducting novel research, so software in such a context serves the goal of enabling quick iterations of experimental learning and discovery. As a software developer, your product <em>is the scientific process itself.</em> All of your products in some way must further the goal of quick and repeatable execution of lab experiments at scale. Everything from developing lab automation software, to deploying machine learning models, to establishing a robust data pipeline that can reliably capture instrument data and calculate key metrics falls under such a goal.</p>
-
-<p>This also means the way software is engineered at a biotech has some quirks:</p>
-
-<ol>
-    <li>
-        <h5>At most biotech companies, you’re not making a single widget; you’re making a dozen different widgets.</h5>
-        <p>You’re not making one strain but ten thousand strains. You’re not helping scientists run just one kind of experiment but often half a dozen (or more!) kinds of experiments, each of which come from a different source, have their own format of metadata, and their own sample tracking.</p>
-    </li>
-    <li>
-        <h5>The widgets you create (front-end tools, data pipelines, dashboards, etc) will be constantly evolving.</h5>
-        <p>Constant change is a feature of all start-ups, but coupled with fact #1 above, staying on top of things as a developer can be extra challenging. Practically, this means you often don’t even have time for a design doc for a new software product or feature. By the time you’ve made one, the research team needed the feature yesterday, has hacked together something that works well enough, has used it to meet some objective, and has already moved onto a different research question. This can be both disorienting but also exciting.</p>
-    </li>
-    <li>
-        <h5>Delivering a simple MVP (”minimum viable product”) that is a little buggy is better than delivering a tool that has no flaws.</h5>
-        <p>Rapidly prototyping or delivering a simple MVP (”minimum viable product”) is infinitely more valuable than architecting a flawless tool, or even a tool that can do many things but is difficult to update. This is especially so in a world where the requirements for research themselves are changing (see point #2). Designing software like this is more of an art than a science, and I believe gets easier with experience, as you learn which components of a tool can be modular and which must be tailored to a specific purpose.</p>
-    </li>
-    <li>
-        <h5>Communication with your stakeholders/users must be constant and fast.</h5>
-        <p>You can’t always assume you know how a lab scientist will want a feature to be implemented, or which metrics a data scientist will want to capture from model. Communicate, communicate, communicate. Wet lab scientists, data scientists, and computational biologists are the scientific experts guiding the development of the biological product that a biotech one day hopes to sell, and unless you did your PhD in the thing they are developing, you probably don’t know exactly what they want and how they want it.</p>
-    </li>
-    <li>
-        <h5>Beautiful, clear, easy-to-understand code will often take a back seat to code that is quickly implemented.</h5>
-        <p>While this is not always true and heavily depends on the developers' experience level and tolerance for brittleness, I have yet to win an argument for slowing down the practice of force pushing `dev` branches to `main` using an appeal to readability and elegance alone. This characteristic about developing at biotech startups is the hardest one for me to stomach, because while some folks disagree, I believe readable code is worth prioritizing (more on that in another blog post!)</p>
-    </li>
-    <li>
-        <h5>There is <b>a LOT LESS</b> formality about how software gets done at a biotech.</h5>
-        <p>A lack of clarity on design and product requirements, as well as a fast and loose development process—scant code reviews, deploying code from dev branches on a time crunch, for example—are endemic. While sprint planning, JIRA tickets, and design docs are regular features of software development at more mature companies, they are not ubiquitous at biotech startups, which can be both good and bad, depending on the team’s objectives.</p>
-    </li>
-    <li>
-        <h5>Your users are never (if rarely) external to the company</h5>
-        <p>They generally consist of lab scientists, data scientists/computational biologists, and any other stakeholders interested in running experiments and evaluating the results of those experiments to inform the next product development cycle. And because you're not launching an external-facing product (in most cases), there is less pressure to make tools that execute flawlessly. If something breaks, you won’t have to worry about 1000s of users writing in to complain.</p>
-    </li>
-    <li>
-        <h5>You have to be prepared to kill your (software) darlings.</h5>
-        <p>The company's needs can change fast, and as a result, a product that was necessary six months ago
-        may become obsolete six months later. Entire codebases can become defunct, and it might seem like all those hours you put into writing and debugging that code were a waste. I like to take a more positive spin, and think of this culling force akin to the force of natural selection on a population (where the population happens to be your software output). If you get attached to what you write, this will be hard to accept. If you can learn to roll with it, however, it's a fun way to learn new things and have impact in ever more novel ways.</p>
-    </li>
+  
     
-</ol>
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
 
-<p>These eight features make for a dynamic and intellectually challenging environment. You’ll learn about technology processes most people have never heard of, all in the context of a mission that feels impactful. Feel free to message me if you have more questions or want advice about a particular problem you’re facing; it might become the subject of my next post!</p>]]></content><author><name></name></author><category term="software" /><summary type="html"><![CDATA[Observations from the last eight years of working at the intersection of biology, data science, and software]]></summary></entry><entry><title type="html">Beyond the t-test</title><link href="https://aellahi.github.io/blog/2022/beyond-the-t-test/" rel="alternate" type="text/html" title="Beyond the t-test" /><published>2022-06-22T00:00:00+00:00</published><updated>2022-06-22T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2022/beyond-the-t-test</id><content type="html" xml:base="https://aellahi.github.io/blog/2022/beyond-the-t-test/"><![CDATA[<p>This is a test. <a href="https://www.pinterest.com">Pinterest</a></p>
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
 
-<h4 id="hipster-list">Hipster list</h4>
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/software-in-biotech/">Eight Features of Software Development at a Biotech Start-up</a>
+  </li>
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+  
 
-<p>Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90’s yr typewriter selfies letterpress cardigan vegan.</p>
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/beyond-the-t-test/">Beyond the t-test</a>
+  </li>
 
-<hr />
+</div>
 
-<p>Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.</p>
+    </div>
 
-<blockquote>
-    We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-    —Anais Nin
-</blockquote>
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2024 Aisha  Ellahi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
-<p>This is not showing up why?</p>]]></content><author><name></name></author><category term="technical-writing" /><category term="datascience" /><summary type="html"><![CDATA[Using Bayesian modeling to separate signal from noise]]></summary></entry></feed>
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
