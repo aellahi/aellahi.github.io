@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://aellahi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aellahi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-14T00:48:10+00:00</updated><id>https://aellahi.github.io/feed.xml</id><title type="html">blank</title><subtitle>Aisha Ellahi&apos;s personal website. I am a biologist turned software engineer who works in the biotech industry.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://aellahi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aellahi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-14T04:23:45+00:00</updated><id>https://aellahi.github.io/feed.xml</id><title type="html">blank</title><subtitle>Aisha Ellahi&apos;s personal website. I am a biologist turned software engineer who works in the biotech industry.
 </subtitle><entry><title type="html">Data Validation Simplified with Pandera</title><link href="https://aellahi.github.io/blog/2024/data-validation/" rel="alternate" type="text/html" title="Data Validation Simplified with Pandera" /><published>2024-10-13T00:00:00+00:00</published><updated>2024-10-13T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/data-validation</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/data-validation/"><![CDATA[<p>As a software engineer working at a life sciences company, building robust data pipelines is a huge part of my job. While data hygiene itself is not the most exciting task, it is essential to all data-driven learning and decision-making. Statistical tests, machine learning models, and even gut-level inferences are only as good as the data that goes into them. As the old adage goes: garbage in, garbage out!</p>
 
 <p>Data validation is any task that aims to ensure data conforms to the necessary assumptions required for any scientific analysis. It can mean everything from making sure metadata is formatted correctly, to checking that measurements are within three standard deviations of the mean.</p>
@@ -17,9 +17,9 @@
 
 <p><br /><br /></p>
 
-<h2 id="example-1-basic-typing-checking"><strong>Example 1: Basic typing checking</strong></h2>
+<h2 id="example-1-basic-type-checking"><strong>Example 1: Basic type checking</strong></h2>
 
-<p>Let’s say you have a dataframe that contains high-level information about a set of animals. Below is some example code for creating this dataframe:</p>
+<p>Let’s say you have a dataframe that contains high-level information about a set of animals. Below is example code for creating this dataframe:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 
@@ -68,7 +68,7 @@
   <li>Check that <code class="language-plaintext highlighter-rouge">animal_group</code> is only one of seven values: mammal, fish, invertebrate, bird, reptile, amphibian, or null</li>
 </ul>
 
-<p>While you could write a function to test that each of these conditions is met, with <code class="language-plaintext highlighter-rouge">pandera</code> all you have to do is define a dataframe model like so:</p>
+<p>While you could write a function to test that each of these conditions is met, with <code class="language-plaintext highlighter-rouge">pandera</code> all you have to do is define a dataframe model as shown below:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="kn">import</span> <span class="n">pandera</span> <span class="k">as</span> <span class="n">pa</span>
@@ -84,7 +84,7 @@
     <span class="p">)</span>
 </code></pre></div></div>
 
-<p>By marking <code class="language-plaintext highlighter-rouge">unique=True</code> for the <code class="language-plaintext highlighter-rouge">common_name</code> field, you’re setting it as a the primary key and also implicitly making sure that there are no duplicate rows in this table. Validation is as easy as feeding your input data to the <code class="language-plaintext highlighter-rouge">.validate</code> method:</p>
+<p>By marking <code class="language-plaintext highlighter-rouge">unique=True</code> for the <code class="language-plaintext highlighter-rouge">common_name</code> field, you’re setting it as the primary key and ensuring there are no duplicate rows in this table. Validation is as easy as feeding your input data to the <code class="language-plaintext highlighter-rouge">.validate</code> method:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># validate
 </span><span class="n">Animals</span><span class="p">.</span><span class="nf">validate</span><span class="p">(</span><span class="n">animals</span><span class="p">,</span> <span class="n">lazy</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
