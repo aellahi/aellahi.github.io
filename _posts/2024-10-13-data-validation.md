@@ -24,7 +24,7 @@ Below are a few examples of how this simple but powerful class works.
 
 <br><br/>
 
-## **Example 1: Basic typing checking**
+## **Example 1: Basic type checking**
 
 Let's say you have a dataframe that contains high-level information about a set of animals. Below is some example code for creating this dataframe:
 
