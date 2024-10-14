@@ -26,7 +26,7 @@ Below are a few examples of how this simple but powerful class works.
 
 ## **Example 1: Basic type checking**
 
-Let's say you have a dataframe that contains high-level information about a set of animals. Below is some example code for creating this dataframe:
+Let's say you have a dataframe that contains high-level information about a set of animals. Below is example code for creating this dataframe:
 
 ```python
 import pandas as pd
@@ -75,7 +75,7 @@ Now let’s say you want to check the following:
 - Check that `common_name` defines the primary key of this table (meaning this column uniquely identifies a row)
 - Check that `animal_group` is only one of seven values: mammal, fish, invertebrate, bird, reptile, amphibian, or null
 
-While you could write a function to test that each of these conditions is met, with `pandera` all you have to do is define a dataframe model like so:
+While you could write a function to test that each of these conditions is met, with `pandera` all you have to do is define a dataframe model as shown below:
 
 ```python
 import pandas as pd
