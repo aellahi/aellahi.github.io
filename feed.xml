@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://aellahi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aellahi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-14T04:23:45+00:00</updated><id>https://aellahi.github.io/feed.xml</id><title type="html">blank</title><subtitle>Aisha Ellahi&apos;s personal website. I am a biologist turned software engineer who works in the biotech industry.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://aellahi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aellahi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-10-20T16:53:28+00:00</updated><id>https://aellahi.github.io/feed.xml</id><title type="html">blank</title><subtitle>Aisha Ellahi&apos;s personal website. I am a biologist turned software engineer who works in the biotech industry.
 </subtitle><entry><title type="html">Data Validation Simplified with Pandera</title><link href="https://aellahi.github.io/blog/2024/data-validation/" rel="alternate" type="text/html" title="Data Validation Simplified with Pandera" /><published>2024-10-13T00:00:00+00:00</published><updated>2024-10-13T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/data-validation</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/data-validation/"><![CDATA[<p>As a software engineer working at a life sciences company, building robust data pipelines is a huge part of my job. While data hygiene itself is not the most exciting task, it is essential to all data-driven learning and decision-making. Statistical tests, machine learning models, and even gut-level inferences are only as good as the data that goes into them. As the old adage goes: garbage in, garbage out!</p>
 
 <p>Data validation is any task that aims to ensure data conforms to the necessary assumptions required for any scientific analysis. It can mean everything from making sure metadata is formatted correctly, to checking that measurements are within three standard deviations of the mean.</p>
@@ -13,7 +13,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">pandera</code> is a python package that essentially applies the concept of a <a href="https://docs.pydantic.dev/latest/">pydantic</a> <code class="language-plaintext highlighter-rouge">BaseModel</code> to a <code class="language-plaintext highlighter-rouge">pandas</code> dataframe. You can outline the desired validation framework for any dataframe you have in one convenient python class called the <a href="https://pandera.readthedocs.io/en/stable/dataframe_models.html">dataframe model</a> and use it to check your data.</p>
 
-<p>Below are a few examples of how this simple but powerful class works.</p>
+<p>Below are a few examples of how this simple but powerful class works. If you’d like a more interactive experience, <strong>download a copy of this Google colab notebook and follow along: <a href="https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing">pandera examples notebook</a></strong>.</p>
 
 <p><br /><br /></p>
 
@@ -72,7 +72,6 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="kn">import</span> <span class="n">pandera</span> <span class="k">as</span> <span class="n">pa</span>
-<span class="kn">from</span> <span class="n">pandera.typing</span> <span class="kn">import</span> <span class="n">Index</span><span class="p">,</span> <span class="n">DataFrame</span><span class="p">,</span> <span class="n">Series</span>
 
 <span class="k">class</span> <span class="nc">Animals</span><span class="p">(</span><span class="n">pa</span><span class="p">.</span><span class="n">DataFrameModel</span><span class="p">):</span>
     <span class="n">common_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">pa</span><span class="p">.</span><span class="nc">Field</span><span class="p">(</span><span class="n">unique</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -80,13 +79,16 @@
     <span class="n">species</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">animal_group</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">pa</span><span class="p">.</span><span class="nc">Field</span><span class="p">(</span>
         <span class="n">nullable</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="nb">coerce</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
         <span class="n">isin</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">mammal</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">fish</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">invertebrate</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">bird</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">reptile</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">amphibian</span><span class="sh">"</span><span class="p">],</span>
     <span class="p">)</span>
 </code></pre></div></div>
 
-<p>By marking <code class="language-plaintext highlighter-rouge">unique=True</code> for the <code class="language-plaintext highlighter-rouge">common_name</code> field, you’re setting it as the primary key and ensuring there are no duplicate rows in this table. Validation is as easy as feeding your input data to the <code class="language-plaintext highlighter-rouge">.validate</code> method:</p>
+<p>By marking <code class="language-plaintext highlighter-rouge">unique=True</code> for the <code class="language-plaintext highlighter-rouge">common_name</code> field, you’re setting it as the primary key and ensuring there are no duplicate rows in this table. And notice we set <code class="language-plaintext highlighter-rouge">nullable=True</code> for the <code class="language-plaintext highlighter-rouge">animal_group</code> column. It will allow for null values (<code class="language-plaintext highlighter-rouge">None</code>, p)</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># validate
+<p>Validation is as easy as feeding your input data to the <code class="language-plaintext highlighter-rouge">.validate</code> method, which will either return the dataframe itself if validation passes, or throw an error if it doesn’t.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># validate, returns a validated dataframe
 </span><span class="n">Animals</span><span class="p">.</span><span class="nf">validate</span><span class="p">(</span><span class="n">animals</span><span class="p">,</span> <span class="n">lazy</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="c1"># or
@@ -196,10 +198,10 @@
 
 
 <span class="c1"># create dataframe
-</span><span class="n">animal_data</span> <span class="o">=</span> <span class="nf">create_animal_data</span><span class="p">()</span>
+</span><span class="n">animal_samples_df</span> <span class="o">=</span> <span class="nf">create_animal_data</span><span class="p">()</span>
 
 <span class="c1"># validate
-</span><span class="nc">AnimalSamples</span><span class="p">(</span><span class="n">animal_data</span><span class="p">,</span> <span class="n">lazy</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class="nc">AnimalSamples</span><span class="p">(</span><span class="n">animal_samples_df</span><span class="p">,</span> <span class="n">lazy</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Notice too that the <code class="language-plaintext highlighter-rouge">weight_g</code> were passed in as strings, but the <code class="language-plaintext highlighter-rouge">coerce=True</code> argument converted the values to floats.</p>
@@ -240,7 +242,7 @@
         <span class="p">]</span>
         <span class="k">return</span> <span class="n">df</span>
 
-<span class="n">processed_data</span> <span class="o">=</span> <span class="nc">AnimalSamples</span><span class="p">(</span><span class="n">animal_data</span><span class="p">)</span>
+<span class="n">processed_data</span> <span class="o">=</span> <span class="nc">AnimalSamples</span><span class="p">(</span><span class="n">animal_samples_df</span><span class="p">)</span>
 
 <span class="nf">print</span><span class="p">(</span><span class="n">processed_data</span><span class="p">.</span><span class="nf">to_markdown</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">))</span>
 </code></pre></div></div>
@@ -256,7 +258,11 @@
 
 <p><br /><br /></p>
 
-<p>These three examples cover the vast majority of data validation use cases that I’ve encountered, but in case you’re curious to learn more, definitely check out the <code class="language-plaintext highlighter-rouge">pandera</code> <a href="https://pandera.readthedocs.io/en/stable/index.html#">docs</a>. The package offers support for other tabular data formats as well (such as <code class="language-plaintext highlighter-rouge">pyspark</code> and <code class="language-plaintext highlighter-rouge">dask</code> dataframes), though <code class="language-plaintext highlighter-rouge">pandas</code> has the most support by far.</p>]]></content><author><name></name></author><category term="software" /><summary type="html"><![CDATA[Example code highlighting the use of pandera's models for data validation]]></summary></entry><entry><title type="html">Eight Features of Software Development at a Biotech Start-up</title><link href="https://aellahi.github.io/blog/2024/software-in-biotech/" rel="alternate" type="text/html" title="Eight Features of Software Development at a Biotech Start-up" /><published>2024-09-18T00:00:00+00:00</published><updated>2024-09-18T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/software-in-biotech</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/software-in-biotech/"><![CDATA[<p>When I finished graduate school in 2016 as a molecular biologist, I knew I wanted to work at the intersection of biology, data science, and software. The field of genomics was exploding then, which brought with it the capability to capture thousands to millions of measurements per cell. All that data promised a more complete picture of biology, but it also necessitated new methods to generate, transform, and interpret said data. You can’t exactly read genome sequences in Excel (though folks have tried), and the sheer quantity of measurements renders experiments practically uninterpretable without statistics and modeling.</p>
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+
+<p>These three examples cover the vast majority of data validation use cases that I’ve encountered, but in case you’re curious to learn more, definitely check out the <code class="language-plaintext highlighter-rouge">pandera</code> <a href="https://pandera.readthedocs.io/en/stable/index.html#">docs</a> or play around with the Colab <a href="https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing">notebook</a> with your own data. While some validation needs are near universal (e.g. type checking), there are many others that are context dependent, and fortunately <code class="language-plaintext highlighter-rouge">pandera</code> offers flexibility to accommodate them. Even type checking array fields, while not straightforward, can be accomplished by <code class="language-plaintext highlighter-rouge">Check</code> <a href="https://pandera.readthedocs.io/en/stable/checks.html">objects</a> or <code class="language-plaintext highlighter-rouge">dataframe_check</code> methods. The package offers support for other tabular data formats as well (such as <code class="language-plaintext highlighter-rouge">pyspark</code> and <code class="language-plaintext highlighter-rouge">dask</code> dataframes), though <code class="language-plaintext highlighter-rouge">pandas</code> has the most support by far.</p>
+
+<p>Good luck and may your data wrangling be quick and painless!</p>]]></content><author><name></name></author><category term="software" /><summary type="html"><![CDATA[Example code highlighting the use of pandera's models for data validation]]></summary></entry><entry><title type="html">Eight Features of Software Development at a Biotech Start-up</title><link href="https://aellahi.github.io/blog/2024/software-in-biotech/" rel="alternate" type="text/html" title="Eight Features of Software Development at a Biotech Start-up" /><published>2024-09-18T00:00:00+00:00</published><updated>2024-09-18T00:00:00+00:00</updated><id>https://aellahi.github.io/blog/2024/software-in-biotech</id><content type="html" xml:base="https://aellahi.github.io/blog/2024/software-in-biotech/"><![CDATA[<p>When I finished graduate school in 2016 as a molecular biologist, I knew I wanted to work at the intersection of biology, data science, and software. The field of genomics was exploding then, which brought with it the capability to capture thousands to millions of measurements per cell. All that data promised a more complete picture of biology, but it also necessitated new methods to generate, transform, and interpret said data. You can’t exactly read genome sequences in Excel (though folks have tried), and the sheer quantity of measurements renders experiments practically uninterpretable without statistics and modeling.</p>
 
 <p>Eight years later, we are at the beginning of another exciting era—one fueled by machine learning and large language models. This renewed spotlight on tech and bio will likely attract software developers from outside the field of biology who may be curious about what working at an early to mid-stage biotech company is like. It is with this audience in mind that I decided to write this post.</p>
 
