@@ -92,7 +92,7 @@ class Animals(pa.DataFrameModel):
     )
 ```
 
-By marking `unique=True` for the `common_name` field, you're setting it as the primary key and ensuring there are no duplicate rows in this table. And notice we set `nullable=True` for the `animal_group` column. It will allow for null values (`None`, p)
+By marking `unique=True` for the `common_name` field, you're setting it as the primary key and ensuring there are no duplicate rows in this table. And notice we set `nullable=True` for the `animal_group` column. It will allow for null values (`None`, `numpy.NaN`, `numpy.nan`, etc).
 
 Validation is as easy as feeding your input data to the `.validate` method, which will either return the dataframe itself if validation passes, or throw an error if it doesn't.
 
