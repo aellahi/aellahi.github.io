@@ -20,7 +20,7 @@ As a data scientist, I often did one-off custom data validation in jupyter noteb
 
 `pandera` is a python package that essentially applies the concept of a [pydantic](https://docs.pydantic.dev/latest/) `BaseModel` to a `pandas` dataframe. You can outline the desired validation framework for any dataframe you have in one convenient python class called the [dataframe model](https://pandera.readthedocs.io/en/stable/dataframe_models.html) and use it to check your data.
 
-Below are a few examples of how this simple but powerful class works. If you'd like a more **experience, download a copy of this Google colab notebook and follow along: [pandera examples notebook](https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing)**.
+Below are a few examples of how this simple but powerful class works. If you'd like a more interactive experience, **download a copy of this Google colab notebook and follow along: [pandera examples notebook](https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing)**.
 
 <br><br/>
 
@@ -94,7 +94,7 @@ class Animals(pa.DataFrameModel):
 
 By marking `unique=True` for the `common_name` field, you're setting it as the primary key and ensuring there are no duplicate rows in this table. And notice we set `nullable=True` for the `animal_group` column. It will allow for null values (`None`, p)
 
-Validation is as easy as feeding your input data to the `.validate` method:
+Validation is as easy as feeding your input data to the `.validate` method, which will either return the dataframe itself if validation passes, or throw an error if it doesn't.
 
 ```python
 # validate, returns a validated dataframe
@@ -274,6 +274,6 @@ yields:
 
 ## Closing Thoughts
 
-These three examples cover the vast majority of data validation use cases that I've encountered, but in case you're curious to learn more, definitely check out the `pandera` [docs](https://pandera.readthedocs.io/en/stable/index.html#) or play around with the Colab [notebook](https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing) with the examples listed above. While some validation needs are near universal (e.g. type checking), there are many others that are context dependent, and fortunately `pandera` offers flexibility to accommodate them. Even type checking array fields, while not straightforward, can be accomplished by `Check` [objects](https://pandera.readthedocs.io/en/stable/checks.html) or `dataframe_check` methods.. The package offers support for other tabular data formats as well (such as `pyspark` and `dask` dataframes), though `pandas` has the most support by far.
+These three examples cover the vast majority of data validation use cases that I've encountered, but in case you're curious to learn more, definitely check out the `pandera` [docs](https://pandera.readthedocs.io/en/stable/index.html#) or play around with the Colab [notebook](https://colab.research.google.com/drive/1AerrSvtQQjblfQ9tAONYsVEmq1xNW0BX?usp=sharing) with your own data. While some validation needs are near universal (e.g. type checking), there are many others that are context dependent, and fortunately `pandera` offers flexibility to accommodate them. Even type checking array fields, while not straightforward, can be accomplished by `Check` [objects](https://pandera.readthedocs.io/en/stable/checks.html) or `dataframe_check` methods. The package offers support for other tabular data formats as well (such as `pyspark` and `dask` dataframes), though `pandas` has the most support by far.
 
-Good luck!
+Good luck and may your data wrangling be quick and painless!
