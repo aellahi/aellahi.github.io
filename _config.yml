@@ -72,34 +72,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: aellahi
 gitlab_username: # your GitLab user name
 twitter_username: AishaEllahi
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
-telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-osf_id: # your OSF ID
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-wikipedia_id: # your wikipedia id (Case sensitive)
-dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: # your discord id (18-digit unique numerical identifier)
+
 
 contact_note: >
 
@@ -121,9 +94,7 @@ blog_nav_title: blog # your blog must have a title for it to be displayed in the
 blog_description:
 permalink: /blog/:year/:title/
 
-# Pagination
-pagination:
-  enabled: true
+# Pagination is now handled at the individual page level
 
 related_blog_posts:
   enabled: true
@@ -160,15 +131,25 @@ disqus_shortname: al-folio # put your disqus shortname
 # Collections
 # -----------------------------------------------------------------------------
 
+# -----------------------------------------------------------------------------
+# Misc
+# -----------------------------------------------------------------------------
+
+misc_name: Misc
+misc_nav_title: misc 
+misc_description: Miscellaneous personal writing projects. Enjoy!
+
+
 collections:
-  news:
-    defaults:
-      layout: post
+  faq:
     output: true
-    permalink: /news/:path/
-  projects:
+    permalink: /faq/:name/
+  misc:
     output: true
-    permalink: /projects/:path/
+    permalink: /misc/:name/
+  posts:
+    output: true
+    permalink: /blog/:year/:title/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 news_limit: 5 # leave blank to include all the news in the `_news` folder
@@ -191,7 +172,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages", "_posts"]
+include: ["_pages", "_posts", "_misc"]
 exclude:
   - bin
   - Gemfile
