@@ -22,4 +22,4 @@ Hello and welcome to my personal page! My name is Aisha and I am a biologist & s
 
 I am a biologist at heart and a passionate believer in the power of data, software, and AI to completely transform the way we engineer biology. I also love writing and teaching others about this exciting topic! Check out my [blog posts](blog/) to read more.
 
-If you'd like to learn more about my professional background, download my [CV](https://drive.google.com/file/d/1UuGBfiIGyv9fea1OuQlMbRfxOV4z92hM/view?usp=drive_link) or take a look at my [LinkedIn](https://www.linkedin.com/in/aisha-ellahi-seattle/) page.
+If you'd like to learn more about my professional background, download my [CV](https://drive.google.com/file/d/1cqoWSprQNPVU0yseA45IeIttRxYq41em/view?usp=sharing) or take a look at my [LinkedIn](https://www.linkedin.com/in/aisha-ellahi-seattle/) page.
