@@ -29,13 +29,14 @@ I didn’t expect to have such clear feelings at the end of all this, but it’s
   </div>
 </div>
 
-Not only is it comfortable to live in, it’s an active, dynamic city with a vibrant intellectual scene. Every season has it's own set of city-wide events (we visited many Christmas markets that started in November). There are multiple universities and technical schools that draw smart people in from all over the world. I met students in molecular biology and professionals working in the climate industry.
-
 <div class="mb-4" style="overflow: auto;">
+  <figure class="figure float-start me-3 mb-3" style="float: left; max-width: 300px; margin-right: 20px; margin-bottom: 20px; width: 100%;"> 
   <img src="/assets/img/vienna_final/mozart_chocolate.jpg" 
-       class="img-fluid rounded float-start me-3 mb-3" 
-       style="float: left; max-width: 300px; margin-right: 20px; margin-bottom: 20px; width: 100%;"
-       alt="christmas1"> 
+       class="img-fluid rounded float-start me-3 mb-3"
+       alt="mozart"> 
+  <figcaption class="figure-caption text-center">Mozart truffles</figcaption>
+  </figure>
+  <p>Not only is it comfortable to live in, it’s an active, dynamic city with a vibrant intellectual scene. Every season has it's own set of city-wide events (we visited many Christmas markets that started in November). There are multiple universities and technical schools that draw smart people in from all over the world. I met students in molecular biology and professionals working in the climate industry.</p>
        
   <p>The art is amazing, and music (especially classical music) is an integral part of the city (Mozart is from Vienna, and boy is Vienna proud!). A singular Mozart truffle is the calling card of Vienna. It’s progressive, and of course, you don’t need reminding that the government pays for healthcare and much effort is put into maintaining the city’s infrastructure. I even had my own brief (and ultimately minor) health scare during our stay and I was able to see a doctor who quickly addressed my concern for free. The quality of the care and the genoristy blew me away. </p>
 </div>
@@ -90,17 +91,19 @@ Not knowing German was not as big of a liability as I feared. The city is so int
 
 ## What makes a home
 
-So after all this gushing about Vienna, you probably think I’m eager to move there, but you’d be wrong! While this experiment has been eye-opening, starting from scratch in a foreign country is an entirely different thing. Moving anywhere new takes a lot of work. I have no doubt that if done right, it can be worth the effort–an exciting type-2 kind of fun that can be super enriching.
+So after all this gushing about Vienna, you probably think I’m eager to move there, but you’d be wrong! While this experiment has been eye-opening, starting from scratch in a foreign country takes a lot of work. I have no doubt that if done right, it can be worth the effort–an exciting type-2 kind of fun that can be super enriching.
 
 <div class="mb-4" style="overflow: auto;">
-<img src="/assets/img/vienna_final/krampusnacht.jpg" 
-    class="img-fluid rounded float-start me-3 mb-3" 
-    style="float: left; max-width: 450px; margin-right: 20px; margin-bottom: 20px; width: 100%;"
-    alt="christmas1"> 
-    
-<p>For me, home equals community. It’s having friends that live just a few miles away who can come over for dinner on a random Monday night and bring leftovers to share. It’s having a standing run every Thursday morning with your squad, where you run slow and help each other process the latest work frustration. It’s the folks who text you asking how that doctor’s appointment about that weird pain in your stomach went. It's late-night soup and cold-medicine drop-offs. It’s seeing your friend smile and feeling a rush of joy. 
+  <figure class="figure float-start me-3 mb-3" style="float: left; max-width: 450px; margin-right: 20px; margin-bottom: 20px; width: 100%;"> 
+  <img src="/assets/img/vienna_final/krampusnacht.jpg" 
+       class="img-fluid rounded float-start me-3 mb-3"
+       alt="mozart"> 
+  <figcaption class="figure-caption text-center">Our annual Krampusnacht dinner celebration</figcaption>
+  </figure>
+     
+<p>But for me, home equals community. It’s having friends that live just a few miles away who can come over for dinner on a random Monday night and bring leftovers to share. It’s having a standing run every Thursday morning with your squad, where you run slow and help each other process the latest work frustration. It’s the folks who text you asking how that doctor’s appointment about that weird pain in your stomach went. It's late-night soup and cold-medicine drop-offs. It’s seeing your friend smile and feeling a rush of joy. 
 </p>
-<p>Home has historically been a thorny topic for me, mired in complicated feelings about belonging, race, religion, immigration, and the increasingly mercurial nature of professional life. But I decided a long time ago that building community was important to me. Life is simply more fun with good people by your side. Living in Vienna reminded me of my own international childhood, moving between the US and Pakistan. It reminded me of the need to adapt quickly, adjust to foreign social dynamics, and to master them enough to get your needs met (<em>I’d like an oat milk latte, please!</em>).</p>
+<p>Home has historically been a thorny topic for me, mired in complicated feelings about belonging, race, religion, immigration, and the increasingly mercurial nature of professional life. But I decided a long time ago that building community was important to me. Life is simply more fun with good people by your side. </p>
 </div>
 
-Vienna was great, but I’ve worked pretty hard to build a community in the states that is very dear to me. Moving somewhere new would require an anchor on which to build another community. And while it’s totally possible–even downright meaningful and rewarding–to create that anchor and watch it blossom over many years, I can’t help but wonder…why blow up a good thing?
+Vienna was great, but I’ve worked pretty hard to build a community in the states that is very dear to me. Moving somewhere new would require an anchor on which to build another community. And while it’s totally doable–even downright meaningful and rewarding–to create that anchor and watch relationships blossom over many years, I can’t help but wonder…why blow up a good thing?
