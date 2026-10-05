@@ -135,18 +135,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # Misc
 # -----------------------------------------------------------------------------
 
-misc_name: Misc
-misc_nav_title: misc 
-misc_description: Miscellaneous personal writing projects. Enjoy!
+# Misc section is local-only: see _config.local.yml (gitignored)
 
 
 collections:
   faq:
     output: true
     permalink: /faq/:name/
-  misc:
-    output: true
-    permalink: /misc/:name/
   posts:
     output: true
     permalink: /blog/:year/:title/
@@ -172,7 +167,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages", "_posts", "_misc"]
+include: ["_pages", "_posts"]
 exclude:
   - bin
   - Gemfile
